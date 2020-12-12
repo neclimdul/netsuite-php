@@ -33,7 +33,7 @@ require 'vendor/autoload.php';
 
 use NetSuite\NetSuiteService;
 
-$config = array(
+$config = [
    // required -------------------------------------
    "endpoint" => "2019_1",
    "host"     => "https://webservices.netsuite.com",
@@ -42,13 +42,19 @@ $config = array(
    "role"     => "3",
    "account"  => "MYACCT1",
    "app_id"   => "4AD027CA-88B3-46EC-9D3E-41C6E6A325E2",
-   // optional -------------------------------------
-   "logging"  => true,
-   "log_path" => "/var/www/myapp/logs/netsuite"
-);
+   // optional_key  => defaultValue
+   "logging"        => false,
+   "log_path"       => __DIR__ . "/../logs",
+   "log_format"     => "netsuite-php-%date-%operation",
+   "log_dateformat" => "Ymd.His.u",
+];
 
 $service = new NetSuiteService($config);
 ```
+
+Note that this library now also supports NetSuite Token-based Authentication,
+which is the preferred method of authentication. Configuration for using TBA
+is outlined below in the [relevant section](#Token-Based-Authentication).
 
 You can alternatively place your config in environment variables. This is
 helpful in hosted environments where deployment of config files is either
@@ -282,8 +288,12 @@ if (!$response->writeResponse->status->isSuccess) {
 
 ### Logging
 
-You can set logging on or off on the fly, or override the configuration setting passed in.
-Please note that if you don't specify a logging directory in the config or afterwards, then you won't get logs no matter what you do.
+You can set logging on or off on the fly, or override the configuration
+setting passed in. Logging is off by default. If you enable logging, you
+there are defaults for the log directory, filename and filename date format.
+Each of these values can be overridden in your configuration. See the
+[quickstart](#quickstart) section of this document for the available config
+keys pertaining to logging and their default values.
 
 **Set a logging path**
 
@@ -308,7 +318,7 @@ $service->logRequests(false); // Turn logging off.
 Instead of instantiating `NetSuiteService` with the standard credentials method, you can pass a set of credentials of the form `consumerKey`/`consumerSecret`/`token`/`tokenSecret`.
 
 ```php
-$config = array(
+$config = [
    // required -------------------------------------
    "endpoint"       => "2019_1",
    "host"           => "https://webservices.netsuite.com",
@@ -319,7 +329,7 @@ $config = array(
    "tokenSecret"    => "0123456789ABCDEF",
    // optional -------------------------------------
    "signatureAlgorithm" => 'sha256', // Defaults to 'sha256'
-);
+];
 
 $service = new NetSuiteService($config);
 ```
