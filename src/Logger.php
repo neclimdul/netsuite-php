@@ -20,11 +20,11 @@ class Logger
 
     const DEFAULT_DATE_FORMAT = 'Ymd.His.u';
 
-    public function __construct($path = null, $format = self::DEFAULT_LOG_FORMAT, $dateFormat = self::DEFAULT_DATE_FORMAT)
+    public function __construct($path = null, $format = null, $dateFormat = null)
     {
         $this->path = $path ?: __DIR__ . '/../logs';
-        $this->format = $format;
-        $this->dateFormat = $dateFormat;
+        $this->format = $format ?: self::DEFAULT_LOG_FORMAT;
+        $this->dateFormat = $dateFormat ?: self::DEFAULT_DATE_FORMAT;
     }
 
     /**
