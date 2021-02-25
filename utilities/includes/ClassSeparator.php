@@ -195,6 +195,9 @@ class ClassSeparator
                             elseif ($property_type == 'dateTime' || $property_type == 'dateTime[]') {
                                 $types[$property_name] = str_replace('dateTime', 'string', $property_type);
                             }
+                            elseif ($property_type == 'RecordType' || preg_match('/Operator$/', $property_type)) {
+                                $types[$property_name] = '\\NetSuite\\Classes\\' . $property_type . '::*';
+                            }
                             // This is a NetSuite value so map it to a class.
                             else {
                                 $types[$property_name] = '\\NetSuite\\Classes\\' . $property_type;
