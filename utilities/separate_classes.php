@@ -18,6 +18,14 @@ require base_path() . "/original/PHPToolkit/NSconfig.php";
 
 $file = base_path() . "/original/PHPToolkit/NetSuiteService.php";
 
+if (!file_exists($file)) {
+    echo 'Original PHP Toolkit does not exist.' . PHP_EOL;
+    echo 'Please download the toolkit and unzip it into the "original" directory.' . PHP_EOL;
+    echo PHP_EOL;
+    echo 'https://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml' . PHP_EOL;
+    echo PHP_EOL;
+    return 1;
+}
 $separator = new ClassSeparator($file);
 
 if ($separator->separate()) {
