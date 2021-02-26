@@ -1,0 +1,9 @@
+parameters:
+  level: 2
+  paths:
+    - src
+    - utilities
+  ignoreErrors:
+    - '#Unsafe usage of new static#'
+    - '#has unknown class NetSuite\\Classes\\base64Binary#'
+    - '#PHPDoc tag @throws with type NetSuite\\Exception is not subtype of Throwable#'
