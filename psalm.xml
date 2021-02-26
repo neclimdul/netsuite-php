@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="5"
+    resolveFromConfigFile="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+>
+    <projectFiles>
+        <directory name="src" />
+        <ignoreFiles>
+            <directory name="vendor" />
+        </ignoreFiles>
+    </projectFiles>
+    <issueHandlers>
+        <UndefinedDocblockClass>
+            <errorLevel type="suppress">
+                <referencedClass name="NetSuite\Classes\base64Binary"/>
+                <!-- TODO This should get fixed but its coming from netsuite so it need munging. -->
+                <referencedClass name="NetSuite\Exception"/>
+            </errorLevel>
+        </UndefinedDocblockClass>
+    </issueHandlers>
+</psalm>

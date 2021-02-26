@@ -10,7 +10,7 @@
  * created:    2015-01-22  1:04 PM
  */
 
-require_once "functions.php";
+require_once __DIR__ . "/functions.php";
 
 class ClassSeparator
 {

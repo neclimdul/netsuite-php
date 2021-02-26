@@ -38,6 +38,7 @@ namespace {
         // helper method that allows creating objects and setting their properties based on an associative array passed as argument. Mimics functionality from PHP toolkit
         $classname = get_class($object);
         // a static map that maps class parameters to their types. needed for knowing which objects to create
+        /** @psalm-suppress InvalidPropertyFetch */
         $typesmap = $classname::$paramtypesmap;
 
         if (!isset($typesmap)) {

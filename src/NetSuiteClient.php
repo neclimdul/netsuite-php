@@ -23,7 +23,7 @@ use NetSuite\Classes\TokenPassportSignature;
 use SoapClient;
 use SoapHeader;
 
-class NetSuiteClient
+abstract class NetSuiteClient
 {
     /**
      * @var array
@@ -85,6 +85,13 @@ class NetSuiteClient
         $dataCenterUrl = $domain.'/services/NetSuitePort_'.$config['endpoint'];
         $this->getClient()->__setLocation($dataCenterUrl);
     }
+
+    /**
+     * @param \NetSuite\Classes\GetDataCenterUrlsRequest $params
+     *
+     * @return \NetSuite\Classes\GetDataCenterUrlsResponse
+     */
+    abstract public function getDataCenterUrls(GetDataCenterUrlsRequest $params);
 
     /**
      * Create a configuration array by inspecting the $_ENV superglobal.
