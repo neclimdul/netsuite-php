@@ -36,11 +36,11 @@ class NetSuiteClient
     /**
      * @var array
      */
-    private $clientOptions = array();
+    private $clientOptions = [];
     /**
      * @var array
      */
-    private $soapHeaders = array();
+    private $soapHeaders = [];
     /**
      * @var \NetSuite\Logger
      */
@@ -194,7 +194,7 @@ class NetSuiteClient
         }
 
         try {
-            $response = $this->getClient()->__soapCall($operation, array($parameter), null, $this->soapHeaders);
+            $response = $this->getClient()->__soapCall($operation, [$parameter], null, $this->soapHeaders);
             $this->logSoapCall($operation);
             return $response;
         } catch (\Exception $e) {
@@ -210,9 +210,9 @@ class NetSuiteClient
      * @param array $overrides
      * @return array
      */
-    private function createOptions($config, $overrides = array())
+    private function createOptions($config, $overrides = [])
     {
-        return array_merge(array(
+        return array_merge([
             'classmap' => require __DIR__."/includes/classmap.php",
             'trace' => 1,
             'connection_timeout' => 5,
@@ -221,7 +221,7 @@ class NetSuiteClient
             'keep_alive' => false,
             'features' => SOAP_SINGLE_ELEMENT_ARRAYS,
             'user_agent' => "PHP-SOAP/".phpversion()." + ryanwinchester/netsuite-php",
-        ), $overrides);
+        ], $overrides);
     }
 
     /**
@@ -454,7 +454,7 @@ class NetSuiteClient
      */
     private function computeTokenPassportSignature($account, $consumerKey, $consumerSecret, $token, $tokenSecret, $nonce, $timestamp, $signatureAlgorithm)
     {
-        $baseString = implode('&', array($account, $consumerKey, $token, $nonce, $timestamp));
+        $baseString = implode('&', [$account, $consumerKey, $token, $nonce, $timestamp]);
         $key = $consumerSecret . '&' . $tokenSecret;
         return base64_encode(hash_hmac($signatureAlgorithm, $baseString, $key, true));
     }

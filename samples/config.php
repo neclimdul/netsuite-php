@@ -1,7 +1,7 @@
 <?php
 
 // An example of loading your config from environment variables with optional defaults.
-return array(
+return [
     'endpoint'       => getenv('NETSUITE_ENDPOINT')       ?: '2017_1',
     'host'           => getenv('NETSUITE_HOST')           ?: 'https://webservices.netsuite.com',
     'email'          => getenv('NETSUITE_EMAIL')          ?: 'jDoe@netsuite.com',
@@ -13,4 +13,4 @@ return array(
     'log_path'       => getenv('NETSUITE_LOG_PATH')       ?: '',
     'log_format'     => getenv('NETSUITE_LOG_FORMAT')     ?: 'netsuite-php-%date-%operation',
     'log_dateformat' => getenv('NETSUITE_LOG_DATEFORMAT') ?: 'Ymd.His.u',
-);
+];
