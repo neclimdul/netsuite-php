@@ -390,7 +390,6 @@ class NetSuiteClient
      * Inject a SoapClient object.
      *
      * @param \SoapClient $client
-     *
      * @return void
      */
     public function setClient(\SoapClient $client): void
@@ -425,7 +424,6 @@ class NetSuiteClient
      * Inject a logger object into the client instance.
      *
      * @param Logger $logger
-     *
      * @return void
      */
     public function setLogger(Logger $logger): void
