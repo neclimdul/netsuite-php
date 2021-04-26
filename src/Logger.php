@@ -4,6 +4,9 @@ namespace NetSuite;
 
 class Logger
 {
+    /**
+     * @var string
+     */
     private $path;
 
     /**
@@ -16,12 +19,28 @@ class Logger
      */
     private $dateFormat;
 
+    /**
+     * @var string
+     */
     const DEFAULT_LOG_FORMAT = 'netsuite-php-%date-%operation';
 
+    /**
+     * @var string
+     */
     const DEFAULT_DATE_FORMAT = 'Ymd.His.u';
 
-    public function __construct($path = null, $format = self::DEFAULT_LOG_FORMAT, $dateFormat = self::DEFAULT_DATE_FORMAT)
-    {
+    /**
+     * Construct a new Logger object.
+     *
+     * @param string $path
+     * @param string $format
+     * @param string $dateFormat
+     */
+    public function __construct(
+        string $path = null,
+        string $format = self::DEFAULT_LOG_FORMAT,
+        string $dateFormat = self::DEFAULT_DATE_FORMAT
+    ) {
         $this->path = $path ?: __DIR__ . '/../logs';
         $this->format = $format;
         $this->dateFormat = $dateFormat;
@@ -33,7 +52,7 @@ class Logger
      * @param string $path
      * @return void
      */
-    public function setPath($path)
+    public function setPath($path): void
     {
         $this->path = $path;
     }
@@ -43,8 +62,9 @@ class Logger
      *
      * @param \SoapClient $client
      * @param string $operation
+     * @return void
      */
-    public function logSoapCall($client, $operation)
+    public function logSoapCall(\SoapClient $client, string $operation): void
     {
         if (file_exists($this->path)) {
             $fileName = strtr($this->format, [
@@ -55,11 +75,11 @@ class Logger
 
             // REQUEST
             $request = $logFile . '-request.xml';
-            $Handle = fopen($request, 'w');
-            $Data = $client->__getLastRequest();
-            $Data = cleanUpNamespaces($Data);
+            $handle = fopen($request, 'w');
+            $data = $client->__getLastRequest();
+            $data = cleanUpNamespaces($data);
 
-            $xml = simplexml_load_string($Data, 'SimpleXMLElement', LIBXML_NOCDATA);
+            $xml = simplexml_load_string($data, 'SimpleXMLElement', LIBXML_NOCDATA);
 
             $privateFieldXpaths = [
                 '//password',
@@ -86,16 +106,16 @@ class Logger
 
             $xml_string = str_replace('xsitype', 'xsi:type', $xml->asXML());
 
-            fwrite($Handle, $xml_string);
-            fclose($Handle);
+            fwrite($handle, $xml_string);
+            fclose($handle);
 
             // RESPONSE
             $response = $logFile . '-response.xml';
-            $Handle = fopen($response, 'w');
-            $Data = $client->__getLastResponse();
+            $handle = fopen($response, 'w');
+            $data = $client->__getLastResponse();
 
-            fwrite($Handle, $Data);
-            fclose($Handle);
+            fwrite($handle, $data);
+            fclose($handle);
         }
     }
 }

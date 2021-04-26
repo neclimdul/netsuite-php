@@ -49,10 +49,15 @@ class NetSuiteClient
     /**
      * @param array $config
      * @param array $options
-     * @param SoapClient $client
+     * @param \SoapClient $client
+     * @param \NetSuite\Logger $logger
      */
-    public function __construct($config = null, $options = [], $client = null)
-    {
+    public function __construct(
+        array $config = null,
+        array $options = [],
+        \SoapClient $client = null,
+        Logger $logger = null
+    ) {
         if ($config) {
             $this->config = $config;
         } else {
@@ -60,14 +65,12 @@ class NetSuiteClient
         }
         $this->validateConfig($this->config);
         $this->clientOptions = $options;
-        if (isset($client)) {
+        if ($client) {
           $this->client = $client;
         }
-        $this->logger = new Logger(
-            empty($this->config['log_path']) ? $this->config['log_path'] : NULL,
-            empty($this->config['log_format']) ? $this->config['log_format'] : Logger::DEFAULT_LOG_FORMAT,
-            empty($this->config['log_dateformat']) ? $this->config['log_dateformat'] : Logger::DEFAULT_DATE_FORMAT
-        );
+        if ($logger) {
+            $this->logger = $logger;
+        }
     }
 
     /**
@@ -384,12 +387,23 @@ class NetSuiteClient
     }
 
     /**
+     * Inject a SoapClient object.
+     *
+     * @param \SoapClient $client
+     * @return void
+     */
+    public function setClient(\SoapClient $client): void
+    {
+        $this->client = $client;
+    }
+
+    /**
      * Get the current soap client.
      *
      * @return \SoapClient
      * @throws \SoapFault
      */
-    public function getClient()
+    public function getClient(): \SoapClient
     {
         if (!isset($this->client)) {
             $options = $this->createOptions($this->config, $this->clientOptions);
@@ -402,15 +416,46 @@ class NetSuiteClient
             unset($this->config['host']);
             $this->setDataCenterUrl($this->config);
         }
+
         return $this->client;
+    }
+
+    /**
+     * Inject a logger object into the client instance.
+     *
+     * @param Logger $logger
+     * @return void
+     */
+    public function setLogger(Logger $logger): void
+    {
+        $this->logger = $logger;
+    }
+
+    /**
+     * Get or create an instance of the Logger.
+     *
+     * @return Logger
+     */
+    public function getLogger(): Logger
+    {
+        if (!$this->logger) {
+            $this->logger = new Logger(
+                empty($this->config['log_path']) ? $this->config['log_path'] : null,
+                empty($this->config['log_format']) ? $this->config['log_format'] : Logger::DEFAULT_LOG_FORMAT,
+                empty($this->config['log_dateformat']) ? $this->config['log_dateformat'] : Logger::DEFAULT_DATE_FORMAT
+            );
+        }
+
+        return $this->logger;
     }
 
     /**
      * Turn request logging on or off.
      *
      * @param bool $on
+     * @return void
      */
-    public function logRequests($on = true)
+    public function logRequests($on = true): void
     {
         $this->config['logging'] = $on;
     }
@@ -419,22 +464,24 @@ class NetSuiteClient
      * Set the logging path.
      *
      * @param string $logPath
+     * @return void
      */
-    public function setLogPath($logPath)
+    public function setLogPath(string $logPath): void
     {
         $this->config['log_path'] = $logPath;
-        $this->logger->setPath($logPath);
+        $this->getLogger()->setPath($logPath);
     }
 
     /**
      * Log the last SOAP call.
      *
      * @param string $operation
+     * @return void
      */
-    private function logSoapCall($operation)
+    private function logSoapCall(string $operation): void
     {
         if (isset($this->config['logging']) && $this->config['logging']) {
-            $this->logger->logSoapCall($this->getClient(), $operation);
+            $this->getLogger()->logSoapCall($this->getClient(), $operation);
         }
     }
 
