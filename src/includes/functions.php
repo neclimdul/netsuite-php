@@ -111,7 +111,7 @@ namespace {
                     }
                 }
 
-                $object->$fldName = $val;
+                $object->$fldName = $val ?? NULL;
             }
             else {
                 $object->$fldName = $fldValue;
