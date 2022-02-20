@@ -31,7 +31,7 @@ abstract class NetSuiteClient
      */
     private $config;
     /**
-     * @var SoapClient
+     * @var SoapClient|null
      */
     private $client;
     /**
