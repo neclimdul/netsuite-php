@@ -121,8 +121,7 @@ namespace {
 
     function milliseconds()
     {
-        $m = explode(' ', microtime());
-        return (int)round($m[0]*10000, 4);
+        return (int) (fmod(microtime(true),1) * 10000);
     }
 
     /**

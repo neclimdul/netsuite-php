@@ -35,7 +35,7 @@ class File extends Record {
      */
     public $fileType;
     /**
-     * @var \NetSuite\Classes\base64Binary
+     * @var string base64 encoded binary.
      */
     public $content;
     /**

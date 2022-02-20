@@ -89,6 +89,9 @@ class ClassSeparator
         // Add namespace prefix to method typehint
         $serviceClass = preg_replace('~(public function \w+\()~', '$1Classes\\', $serviceClass);
 
+        // Fix namespace of exceptions
+        $serviceClass = preg_replace('/@throws Exception/', '@throws \\Exception', $serviceClass);
+
         // Remove extra whitespace
         $serviceClass = preg_replace("/^\s{2,}$/m", "\n", $serviceClass);
 
@@ -198,6 +201,12 @@ class ClassSeparator
                             // Date time is really a string containing a date.
                             elseif ($property_type == 'dateTime' || $property_type == 'dateTime[]') {
                                 $types[$property_name] = str_replace('dateTime', 'string', $property_type);
+                            }
+                            elseif ($property_type == 'base64Binary') {
+                                // This is hacky but since there isn't any docs
+                                // on types this hacks a documentation string
+                                // onto the definition.
+                                $types[$property_name] = 'string base64 encoded binary.';
                             }
                             elseif (isset(ClassSeparator::$enum_classes[$property_type]) || preg_match('/Operator$/', $property_type)) {
                                 $types[$property_name] = '\\NetSuite\\Classes\\' . $property_type . '::*';
