@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemFulfillmentPackageFedExCodMethodFedEx {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _any = "_any";
     const _cash = "_cash";

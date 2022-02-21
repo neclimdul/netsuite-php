@@ -98,7 +98,10 @@ class BudgetSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "account" => "SearchColumnStringField[]",
         "accountingBook" => "SearchColumnStringField[]",
         "amount" => "SearchColumnDoubleField[]",

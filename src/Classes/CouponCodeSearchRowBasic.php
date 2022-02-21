@@ -54,7 +54,10 @@ class CouponCodeSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnBooleanField[]
      */
     public $used;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "code" => "SearchColumnStringField[]",
         "dateSent" => "SearchColumnDateField[]",
         "externalId" => "SearchColumnSelectField[]",

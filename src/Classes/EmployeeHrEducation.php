@@ -30,7 +30,10 @@ class EmployeeHrEducation {
      * @var string
      */
     public $degreeDate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "education" => "RecordRef",
         "degree" => "string",
         "degreeDate" => "dateTime",

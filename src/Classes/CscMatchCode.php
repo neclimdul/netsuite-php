@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CscMatchCode {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _n = "_n";
     const _x = "_x";

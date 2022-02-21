@@ -42,7 +42,10 @@ class BudgetExchangeRate {
      * @var float
      */
     public $historicalRate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "period" => "RecordRef",
         "fromSubsidiary" => "RecordRef",
         "toSubsidiary" => "RecordRef",

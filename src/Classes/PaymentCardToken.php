@@ -98,7 +98,10 @@ class PaymentCardToken extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "entity" => "RecordRef",
         "mask" => "string",
         "paymentMethod" => "RecordRef",

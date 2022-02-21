@@ -130,7 +130,10 @@ class ExpenseReportExpense {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "line" => "integer",
         "expenseDate" => "dateTime",
         "category" => "RecordRef",

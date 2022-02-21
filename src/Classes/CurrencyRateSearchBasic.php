@@ -42,7 +42,10 @@ class CurrencyRateSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $transactionCurrency;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "baseCurrency" => "SearchMultiSelectField",
         "effectiveDate" => "SearchDateField",
         "exchangeRate" => "SearchDoubleField",

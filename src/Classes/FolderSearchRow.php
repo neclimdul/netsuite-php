@@ -30,7 +30,10 @@ class FolderSearchRow extends SearchRow {
      * @var \NetSuite\Classes\EmployeeSearchRowBasic
      */
     public $userJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "FolderSearchRowBasic",
         "fileJoin" => "FileSearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",

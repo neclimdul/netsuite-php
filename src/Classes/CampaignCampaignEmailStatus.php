@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CampaignCampaignEmailStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _execute = "_execute";
     const _inProgress = "_inProgress";

@@ -22,7 +22,10 @@ class LongCustomFieldRef extends CustomFieldRef {
      * @var integer
      */
     public $value;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "value" => "integer",
     );
 }

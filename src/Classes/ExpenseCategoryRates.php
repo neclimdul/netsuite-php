@@ -30,7 +30,10 @@ class ExpenseCategoryRates {
      * @var float
      */
     public $defaultRate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "subsidiary" => "RecordRef",
         "currency" => "RecordRef",
         "defaultRate" => "float",

@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class TransactionPaymentEventHoldReason {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _amountExceedsMaximumAllowedAmount = "_amountExceedsMaximumAllowedAmount";
     const _authorizationDecline = "_authorizationDecline";

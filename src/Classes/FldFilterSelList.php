@@ -22,7 +22,10 @@ class FldFilterSelList {
      * @var \NetSuite\Classes\RecordRef[]
      */
     public $fldFilterSel;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "fldFilterSel" => "RecordRef[]",
     );
 }

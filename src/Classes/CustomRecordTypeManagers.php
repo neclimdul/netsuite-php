@@ -22,7 +22,10 @@ class CustomRecordTypeManagers {
      * @var \NetSuite\Classes\RecordRef
      */
     public $managerEmp;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "managerEmp" => "RecordRef",
     );
 }

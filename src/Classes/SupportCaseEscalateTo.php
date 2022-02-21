@@ -30,7 +30,10 @@ class SupportCaseEscalateTo {
      * @var string
      */
     public $phone;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "escalatee" => "RecordRef",
         "email" => "string",
         "phone" => "string",

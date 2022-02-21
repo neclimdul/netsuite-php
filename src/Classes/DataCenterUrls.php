@@ -30,7 +30,10 @@ class DataCenterUrls {
      * @var string
      */
     public $systemDomain;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "restDomain" => "string",
         "webservicesDomain" => "string",
         "systemDomain" => "string",

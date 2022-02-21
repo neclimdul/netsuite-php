@@ -34,7 +34,10 @@ class AssemblyItemBomSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $locations;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "assembly" => "SearchMultiSelectField",
         "billOfMaterials" => "SearchMultiSelectField",
         "default" => "SearchBooleanField",

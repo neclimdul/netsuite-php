@@ -26,7 +26,10 @@ class DeleteListRequest {
      * @var \NetSuite\Classes\DeletionReason
      */
     public $deletionReason;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "baseRef" => "BaseRef[]",
         "deletionReason" => "DeletionReason",
     );

@@ -110,7 +110,10 @@ class VendorReturnAuthorizationExpense {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "orderLine" => "integer",
         "line" => "integer",
         "category" => "RecordRef",

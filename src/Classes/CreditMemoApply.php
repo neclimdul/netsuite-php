@@ -62,7 +62,10 @@ class CreditMemoApply {
      * @var integer
      */
     public $line;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "apply" => "boolean",
         "doc" => "integer",
         "applyDate" => "dateTime",

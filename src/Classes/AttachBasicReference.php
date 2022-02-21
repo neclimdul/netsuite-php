@@ -22,7 +22,10 @@ class AttachBasicReference extends AttachReference {
      * @var \NetSuite\Classes\BaseRef
      */
     public $attachedRecord;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "attachedRecord" => "BaseRef",
     );
 }

@@ -38,7 +38,10 @@ class PaycheckPayPto {
      * @var float
      */
     public $hoursBalance;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "payItem" => "integer",
         "payItemName" => "string",
         "hoursAccrued" => "float",

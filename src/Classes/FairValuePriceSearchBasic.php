@@ -90,7 +90,10 @@ class FairValuePriceSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $unitsType;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "currency" => "SearchMultiSelectField",
         "endDate" => "SearchDateField",
         "externalId" => "SearchMultiSelectField",

@@ -18,6 +18,9 @@
 namespace NetSuite\Classes;
 
 class AsyncResult {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
 }

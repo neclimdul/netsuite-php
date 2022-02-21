@@ -22,7 +22,10 @@ class GetAllResponse {
      * @var \NetSuite\Classes\GetAllResult
      */
     public $getAllResult;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "getAllResult" => "GetAllResult",
     );
 }

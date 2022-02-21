@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CampaignStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _closed = "_closed";
     const _completed = "_completed";

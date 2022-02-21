@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemFulfillmentPackageFedExSignatureOptionsFedEx {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _adult = "_adult";
     const _direct = "_direct";

@@ -34,7 +34,10 @@ class SearchDateField {
      * @var \NetSuite\Classes\SearchDateFieldOperator::*
      */
     public $operator;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "predefinedSearchValue" => "SearchDate",
         "searchValue" => "dateTime",
         "searchValue2" => "dateTime",

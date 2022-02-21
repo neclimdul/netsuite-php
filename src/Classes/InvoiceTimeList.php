@@ -26,7 +26,10 @@ class InvoiceTimeList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "time" => "InvoiceTime[]",
         "replaceAll" => "boolean",
     );

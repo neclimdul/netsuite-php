@@ -126,7 +126,10 @@ class TaskSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "actualTime" => "SearchDoubleField",
         "assigned" => "SearchMultiSelectField",
         "company" => "SearchMultiSelectField",

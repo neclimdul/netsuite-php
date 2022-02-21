@@ -30,7 +30,10 @@ class GetCustomizationIdResult {
      * @var \NetSuite\Classes\CustomizationRefList
      */
     public $customizationRefList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "totalRecords" => "integer",
         "customizationRefList" => "CustomizationRefList",

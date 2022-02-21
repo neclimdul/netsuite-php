@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CustomerDepositPaymentOperation {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _authorization = "_authorization";
     const _capture = "_capture";

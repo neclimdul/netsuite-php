@@ -34,7 +34,10 @@ class Pricing {
      * @var \NetSuite\Classes\PriceList
      */
     public $priceList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "currency" => "RecordRef",
         "priceLevel" => "RecordRef",
         "discount" => "float",

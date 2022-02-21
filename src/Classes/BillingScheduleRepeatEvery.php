@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class BillingScheduleRepeatEvery {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _1 = "_1";
     const _2 = "_2";

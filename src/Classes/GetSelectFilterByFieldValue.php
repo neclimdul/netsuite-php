@@ -30,7 +30,10 @@ class GetSelectFilterByFieldValue {
      * @var string
      */
     public $internalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "sublist" => "string",
         "field" => "string",
         "internalId" => "string",

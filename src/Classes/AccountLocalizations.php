@@ -38,7 +38,10 @@ class AccountLocalizations {
      * @var \NetSuite\Classes\Language
      */
     public $locale;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accountingContext" => "RecordRef",
         "acctNumber" => "string",
         "acctName" => "string",

@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class PaymentCardBrand {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _amex = "_amex";
     const _cirrus = "_cirrus";

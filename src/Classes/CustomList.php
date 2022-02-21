@@ -62,7 +62,10 @@ class CustomList extends Record {
      * @var string
      */
     public $internalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "name" => "string",
         "owner" => "RecordRef",
         "isOrdered" => "boolean",

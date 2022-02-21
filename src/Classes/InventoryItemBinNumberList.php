@@ -26,7 +26,10 @@ class InventoryItemBinNumberList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "binNumber" => "InventoryItemBinNumber[]",
         "replaceAll" => "boolean",
     );

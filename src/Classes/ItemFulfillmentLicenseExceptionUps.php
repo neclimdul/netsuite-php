@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemFulfillmentLicenseExceptionUps {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _agr = "_agr";
     const _apr = "_apr";

@@ -66,7 +66,10 @@ class EmployeeDirectDeposit {
      * @var boolean
      */
     public $inactive;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "id" => "integer",
         "netAccount" => "boolean",
         "savingsAccount" => "boolean",

@@ -50,7 +50,10 @@ class ItemVendor {
      * @var \NetSuite\Classes\RecordRef
      */
     public $subsidiary;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "vendor" => "RecordRef",
         "vendorCode" => "string",
         "vendorCurrencyName" => "string",

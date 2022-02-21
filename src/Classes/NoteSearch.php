@@ -102,7 +102,10 @@ class NoteSearch extends SearchRecord {
      * @var \NetSuite\Classes\CustomSearchJoin[]
      */
     public $customSearchJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "NoteSearchBasic",
         "authorJoin" => "EmployeeSearchBasic",
         "callJoin" => "PhoneCallSearchBasic",

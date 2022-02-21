@@ -26,7 +26,10 @@ class LanguageValue {
      * @var string
      */
     public $value;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "locale" => "Language",
         "value" => "string",
     );

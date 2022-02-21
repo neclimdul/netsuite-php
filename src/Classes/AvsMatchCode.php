@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class AvsMatchCode {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _n = "_n";
     const _x = "_x";

@@ -50,7 +50,10 @@ class BillingScheduleMilestone {
      * @var string
      */
     public $comments;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "milestoneId" => "integer",
         "milestoneAmount" => "float",
         "milestoneTerms" => "RecordRef",

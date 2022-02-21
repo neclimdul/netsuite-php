@@ -106,7 +106,10 @@ class TaxGroupSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchStringField
      */
     public $zip;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "city" => "SearchStringField",
         "country" => "SearchEnumMultiSelectField",
         "county" => "SearchStringField",

@@ -38,7 +38,10 @@ class PresentationItem {
      * @var float
      */
     public $basePrice;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "item" => "RecordRef",
         "itemType" => "PresentationItemType",
         "description" => "string",

@@ -38,7 +38,10 @@ class CustomerTaxRegistration {
      * @var integer
      */
     public $id;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "nexusCountry" => "Country",
         "nexus" => "RecordRef",
         "address" => "RecordRef",

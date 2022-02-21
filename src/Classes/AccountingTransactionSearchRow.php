@@ -34,7 +34,10 @@ class AccountingTransactionSearchRow extends SearchRow {
      * @var \NetSuite\Classes\TransactionSearchRowBasic
      */
     public $transactionJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "AccountingTransactionSearchRowBasic",
         "accountJoin" => "AccountSearchRowBasic",
         "revRecScheduleJoin" => "RevRecScheduleSearchRowBasic",

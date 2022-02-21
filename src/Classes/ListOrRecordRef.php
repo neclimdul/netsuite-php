@@ -34,7 +34,10 @@ class ListOrRecordRef {
      * @var string
      */
     public $typeId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "name" => "string",
         "internalId" => "string",
         "externalId" => "string",

@@ -26,7 +26,10 @@ class SalesOrderSalesTeamList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "salesTeam" => "SalesOrderSalesTeam[]",
         "replaceAll" => "boolean",
     );

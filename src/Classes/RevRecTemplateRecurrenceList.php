@@ -26,7 +26,10 @@ class RevRecTemplateRecurrenceList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "revRecTemplateRecurrence" => "RevRecTemplateRecurrence[]",
         "replaceAll" => "boolean",
     );

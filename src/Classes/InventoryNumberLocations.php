@@ -38,7 +38,10 @@ class InventoryNumberLocations {
      * @var float
      */
     public $quantityInTransit;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "location" => "string",
         "quantityOnHand" => "float",
         "quantityAvailable" => "float",

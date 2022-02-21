@@ -34,7 +34,10 @@ class ItemAccountMappingSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "ItemAccountMappingSearch",
         "columns" => "ItemAccountMappingSearchRow",
         "savedSearchId" => "string",

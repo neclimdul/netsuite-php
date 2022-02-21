@@ -30,7 +30,10 @@ class TopicSearchRow extends SearchRow {
      * @var \NetSuite\Classes\EmployeeSearchRowBasic
      */
     public $userJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "TopicSearchRowBasic",
         "solutionJoin" => "SolutionSearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",

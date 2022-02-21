@@ -22,7 +22,10 @@ class GetCurrencyRateResponse {
      * @var \NetSuite\Classes\GetCurrencyRateResult
      */
     public $getCurrencyRateResult;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "getCurrencyRateResult" => "GetCurrencyRateResult",
     );
 }

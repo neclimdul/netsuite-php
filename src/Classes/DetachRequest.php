@@ -22,7 +22,10 @@ class DetachRequest {
      * @var \NetSuite\Classes\DetachReference
      */
     public $detachReference;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "detachReference" => "DetachReference",
     );
 }

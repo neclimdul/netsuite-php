@@ -66,7 +66,10 @@ class CustomerCurrency {
      * @var \NetSuite\Classes\CurrencySymbolPlacement
      */
     public $symbolPlacement;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "currency" => "RecordRef",
         "balance" => "float",
         "consolBalance" => "float",

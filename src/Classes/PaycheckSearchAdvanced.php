@@ -34,7 +34,10 @@ class PaycheckSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "PaycheckSearch",
         "columns" => "PaycheckSearchRow",
         "savedSearchId" => "string",

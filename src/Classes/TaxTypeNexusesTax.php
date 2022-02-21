@@ -34,7 +34,10 @@ class TaxTypeNexusesTax {
      * @var \NetSuite\Classes\RecordRef
      */
     public $purchTaxAcct;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "nexus" => "RecordRef",
         "description" => "string",
         "saleTaxAcct" => "RecordRef",

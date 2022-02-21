@@ -22,7 +22,10 @@ class GetServerTimeResponse {
      * @var \NetSuite\Classes\GetServerTimeResult
      */
     public $getServerTimeResult;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "getServerTimeResult" => "GetServerTimeResult",
     );
 }

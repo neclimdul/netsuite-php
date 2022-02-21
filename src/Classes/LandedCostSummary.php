@@ -34,7 +34,10 @@ class LandedCostSummary {
      * @var \NetSuite\Classes\RecordRef
      */
     public $transaction;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "category" => "RecordRef",
         "amount" => "float",
         "source" => "LandedCostSource",

@@ -229,6 +229,8 @@ class ClassSeparator
             foreach ($types as $variable_name => $property_type) {
                 $class = preg_replace('/public \$' . $variable_name . ';/', "/**\n     * @var $property_type\n     */\n    public \$$variable_name;", $class);
             }
+            // Provide visibility and better type hint for parameter map.
+            $class = preg_replace('/static \$paramtypesmap/', "/**\n     * @var string[]\n     */\n    public static \$paramtypesmap", $class);
             // Template write the class.
             $filename = base_path() . '/src/Classes/' . $name . '.php';
             $template = include utilities_path() . '/includes/templates/class.template.php';

@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CustomerPaymentHandlingMode {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _process = "_process";
     const _recordExternalEvent = "_recordExternalEvent";

@@ -198,7 +198,10 @@ class CustomRecordType extends Record {
      * @var string
      */
     public $internalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "recordName" => "string",
         "includeName" => "boolean",
         "showId" => "boolean",

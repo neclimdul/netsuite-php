@@ -22,7 +22,10 @@ class GetIntegrationGovernanceInfoResponse {
      * @var \NetSuite\Classes\GetIntegrationGovernanceInfoResult
      */
     public $getIntegrationGovernanceInfoResult;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "getIntegrationGovernanceInfoResult" => "GetIntegrationGovernanceInfoResult",
     );
 }

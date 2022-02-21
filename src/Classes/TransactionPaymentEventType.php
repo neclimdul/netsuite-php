@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class TransactionPaymentEventType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _authentication = "_authentication";
     const _authorization = "_authorization";

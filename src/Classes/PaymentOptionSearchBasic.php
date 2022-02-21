@@ -30,7 +30,10 @@ class PaymentOptionSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchEnumMultiSelectField
      */
     public $paymentInstrumentType;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "internalId" => "SearchMultiSelectField",
         "internalIdNumber" => "SearchLongField",
         "paymentInstrumentType" => "SearchEnumMultiSelectField",

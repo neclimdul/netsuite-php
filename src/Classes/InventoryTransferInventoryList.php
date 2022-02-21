@@ -26,7 +26,10 @@ class InventoryTransferInventoryList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "inventory" => "InventoryTransferInventory[]",
         "replaceAll" => "boolean",
     );

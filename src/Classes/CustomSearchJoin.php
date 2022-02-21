@@ -26,7 +26,10 @@ class CustomSearchJoin {
      * @var \NetSuite\Classes\SearchRecordBasic
      */
     public $searchRecordBasic;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "customizationRef" => "CustomizationRef",
         "searchRecordBasic" => "SearchRecordBasic",
     );

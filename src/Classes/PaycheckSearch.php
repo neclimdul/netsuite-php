@@ -30,7 +30,10 @@ class PaycheckSearch extends SearchRecord {
      * @var \NetSuite\Classes\PayrollItemSearchBasic
      */
     public $payrollItemJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "PaycheckSearchBasic",
         "employeeJoin" => "EmployeeSearchBasic",
         "payrollItemJoin" => "PayrollItemSearchBasic",

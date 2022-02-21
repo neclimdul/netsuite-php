@@ -90,7 +90,10 @@ class TermSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnBooleanField[]
      */
     public $splitEvenly;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "dateDriven" => "SearchColumnBooleanField[]",
         "dayDiscountExpires" => "SearchColumnLongField[]",
         "dayOfMonthNetDue" => "SearchColumnLongField[]",

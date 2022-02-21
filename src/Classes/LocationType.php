@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class LocationType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _store = "_store";
     const _warehouse = "_warehouse";

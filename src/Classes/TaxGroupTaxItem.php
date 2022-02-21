@@ -34,7 +34,10 @@ class TaxGroupTaxItem {
      * @var string
      */
     public $taxType;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "taxName" => "RecordRef",
         "rate" => "float",
         "basis" => "float",

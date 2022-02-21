@@ -358,7 +358,10 @@ class SalesOrderItem {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "job" => "RecordRef",
         "subscription" => "RecordRef",
         "item" => "RecordRef",

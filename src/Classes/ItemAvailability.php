@@ -62,7 +62,10 @@ class ItemAvailability {
      * @var float
      */
     public $quantityAvailable;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "item" => "RecordRef",
         "lastQtyAvailableChange" => "dateTime",
         "locationId" => "RecordRef",

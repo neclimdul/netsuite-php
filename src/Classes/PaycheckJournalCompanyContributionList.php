@@ -26,7 +26,10 @@ class PaycheckJournalCompanyContributionList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "paycheckJournalCompanyContribution" => "PaycheckJournalCompanyContribution[]",
         "replaceAll" => "boolean",
     );

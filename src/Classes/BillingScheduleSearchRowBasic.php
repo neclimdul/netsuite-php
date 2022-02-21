@@ -78,7 +78,10 @@ class BillingScheduleSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
      */
     public $type;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "applyToSubtotal" => "SearchColumnBooleanField[]",
         "externalId" => "SearchColumnSelectField[]",
         "frequency" => "SearchColumnEnumSelectField[]",

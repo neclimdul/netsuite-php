@@ -22,7 +22,10 @@ class DimensionList {
      * @var \NetSuite\Classes\DimensionRef[]
      */
     public $dimension;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "dimension" => "DimensionRef[]",
     );
 }

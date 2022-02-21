@@ -26,7 +26,10 @@ class AdvInterCompanyJournalEntryLineList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "line" => "AdvInterCompanyJournalEntryLine[]",
         "replaceAll" => "boolean",
     );

@@ -42,7 +42,10 @@ class CostCategorySearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $name;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "account" => "SearchColumnSelectField[]",
         "externalId" => "SearchColumnSelectField[]",
         "internalId" => "SearchColumnSelectField[]",

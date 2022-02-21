@@ -82,7 +82,10 @@ class RevRecTemplateSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchBooleanField
      */
     public $useForeignAmounts;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "amorMethod" => "SearchEnumMultiSelectField",
         "amorPeriod" => "SearchLongField",
         "amorStartOffset" => "SearchLongField",

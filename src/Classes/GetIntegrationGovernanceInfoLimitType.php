@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class GetIntegrationGovernanceInfoLimitType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _account = "_account";
     const _integrationSpecific = "_integrationSpecific";

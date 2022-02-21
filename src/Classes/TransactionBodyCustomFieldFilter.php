@@ -42,7 +42,10 @@ class TransactionBodyCustomFieldFilter {
      * @var boolean
      */
     public $fldFilterNotNull;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "fldFilter" => "RecordRef",
         "fldFilterChecked" => "boolean",
         "fldFilterCompareType" => "CustomizationFilterCompareType",

@@ -218,7 +218,10 @@ class CustomPurchase extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "createdDate" => "dateTime",
         "lastModifiedDate" => "dateTime",
         "tranType" => "RecordRef",

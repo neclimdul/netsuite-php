@@ -30,7 +30,10 @@ class RecordRef extends BaseRef {
      * @var \NetSuite\Classes\RecordType::*
      */
     public $type;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "internalId" => "string",
         "externalId" => "string",
         "type" => "RecordType",

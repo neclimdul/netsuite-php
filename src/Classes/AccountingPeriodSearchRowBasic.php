@@ -82,7 +82,10 @@ class AccountingPeriodSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnDateField[]
      */
     public $startDate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "allLocked" => "SearchColumnBooleanField[]",
         "allowNonGLChanges" => "SearchColumnBooleanField[]",
         "apLocked" => "SearchColumnBooleanField[]",

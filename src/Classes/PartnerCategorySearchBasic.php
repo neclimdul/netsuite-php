@@ -46,7 +46,10 @@ class PartnerCategorySearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $parent;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",
         "internalId" => "SearchMultiSelectField",

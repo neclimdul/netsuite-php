@@ -54,7 +54,10 @@ class SiteCategorySearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchEnumMultiSelectField
      */
     public $sitemapPriority;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "dateViewed" => "SearchDateField",
         "description" => "SearchStringField",
         "excludeFromSitemap" => "SearchBooleanField",

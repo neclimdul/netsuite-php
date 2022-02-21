@@ -26,7 +26,10 @@ class ReadResponse {
      * @var \NetSuite\Classes\Record
      */
     public $record;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "record" => "Record",
     );

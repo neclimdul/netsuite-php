@@ -26,7 +26,10 @@ class CashSaleItemCostList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "itemCost" => "CashSaleItemCost[]",
         "replaceAll" => "boolean",
     );

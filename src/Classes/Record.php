@@ -22,7 +22,10 @@ class Record {
      * @var \NetSuite\Classes\NullField
      */
     public $nullFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "nullFieldList" => "NullField",
     );
 }

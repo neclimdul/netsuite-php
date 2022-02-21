@@ -34,7 +34,10 @@ class PhoneCallContact {
      * @var string
      */
     public $email;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "company" => "RecordRef",
         "contact" => "RecordRef",
         "phone" => "string",

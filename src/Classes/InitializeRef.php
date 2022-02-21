@@ -30,7 +30,10 @@ class InitializeRef extends BaseRef {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "type" => "InitializeRefType",
         "internalId" => "string",
         "externalId" => "string",

@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class IntercoStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _paired = "_paired";
     const _pending = "_pending";

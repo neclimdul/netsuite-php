@@ -26,7 +26,10 @@ class InventoryDetail extends Record {
      * @var \NetSuite\Classes\RecordRef
      */
     public $customForm;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "inventoryAssignmentList" => "InventoryAssignmentList",
         "customForm" => "RecordRef",
     );

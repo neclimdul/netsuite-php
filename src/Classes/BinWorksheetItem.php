@@ -66,7 +66,10 @@ class BinWorksheetItem {
      * @var string
      */
     public $itemBlank;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "item" => "RecordRef",
         "itemName" => "string",
         "description" => "string",

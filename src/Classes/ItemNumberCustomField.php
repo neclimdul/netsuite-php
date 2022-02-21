@@ -174,7 +174,10 @@ class ItemNumberCustomField extends CustomFieldType {
      * @var string
      */
     public $internalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "label" => "string",
         "owner" => "RecordRef",
         "description" => "string",

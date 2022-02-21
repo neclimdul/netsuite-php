@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CurrencyLocale {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _afghanistanPashto = "_afghanistanPashto";
     const _afghanistanPersian = "_afghanistanPersian";

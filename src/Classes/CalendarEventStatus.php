@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CalendarEventStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _canceled = "_canceled";
     const _completed = "_completed";

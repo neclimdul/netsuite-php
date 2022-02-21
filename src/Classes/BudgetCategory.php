@@ -34,7 +34,10 @@ class BudgetCategory extends Record {
      * @var string
      */
     public $internalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "name" => "string",
         "budgetType" => "boolean",
         "isInactive" => "boolean",

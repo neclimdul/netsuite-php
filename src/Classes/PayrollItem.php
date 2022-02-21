@@ -66,7 +66,10 @@ class PayrollItem extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "subsidiary" => "RecordRef",
         "itemType" => "RecordRef",
         "name" => "string",

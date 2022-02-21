@@ -26,7 +26,10 @@ class SearchMultiSelectCustomField extends SearchCustomField {
      * @var \NetSuite\Classes\SearchMultiSelectFieldOperator::*
      */
     public $operator;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchValue" => "ListOrRecordRef[]",
         "operator" => "SearchMultiSelectFieldOperator",
     );

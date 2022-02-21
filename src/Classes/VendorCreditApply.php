@@ -58,7 +58,10 @@ class VendorCreditApply {
      * @var float
      */
     public $amount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "apply" => "boolean",
         "applyDate" => "dateTime",
         "doc" => "integer",

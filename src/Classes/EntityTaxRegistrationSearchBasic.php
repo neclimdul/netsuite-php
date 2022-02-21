@@ -34,7 +34,10 @@ class EntityTaxRegistrationSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchStringField
      */
     public $taxRegistrationNumber;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "address" => "SearchMultiSelectField",
         "id" => "SearchLongField",
         "nexusCountry" => "SearchEnumMultiSelectField",

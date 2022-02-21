@@ -22,7 +22,10 @@ class ChangePasswordRequest {
      * @var \NetSuite\Classes\ChangePassword
      */
     public $changePassword;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "changePassword" => "ChangePassword",
     );
 }

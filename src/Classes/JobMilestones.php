@@ -38,7 +38,10 @@ class JobMilestones {
      * @var string
      */
     public $milestoneComments;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "milestoneName" => "string",
         "milestoneOrder" => "string",
         "milestoneEstComplete" => "dateTime",

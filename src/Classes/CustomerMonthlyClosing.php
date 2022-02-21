@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CustomerMonthlyClosing {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _one = "_one";
     const _five = "_five";

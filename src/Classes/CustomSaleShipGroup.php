@@ -62,7 +62,10 @@ class CustomSaleShipGroup {
      * @var string
      */
     public $shippingMethodRef;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "sourceAddress" => "string",
         "destinationAddress" => "string",
         "shippingMethod" => "string",

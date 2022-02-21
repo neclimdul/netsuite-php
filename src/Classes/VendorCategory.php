@@ -38,7 +38,10 @@ class VendorCategory extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "name" => "string",
         "isTaxAgency" => "boolean",
         "isInactive" => "boolean",

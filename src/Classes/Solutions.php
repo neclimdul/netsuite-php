@@ -26,7 +26,10 @@ class Solutions {
      * @var string
      */
     public $message;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "solution" => "RecordRef",
         "message" => "string",
     );

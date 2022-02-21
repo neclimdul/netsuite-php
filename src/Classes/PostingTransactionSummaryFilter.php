@@ -58,7 +58,10 @@ class PostingTransactionSummaryFilter {
      * @var \NetSuite\Classes\RecordRefList
      */
     public $book;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "period" => "RecordRefList",
         "account" => "RecordRefList",
         "parentItem" => "RecordRefList",

@@ -38,7 +38,10 @@ class EmployeeEmergencyContact {
      * @var string
      */
     public $phone;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "id" => "integer",
         "contact" => "string",
         "relationship" => "string",

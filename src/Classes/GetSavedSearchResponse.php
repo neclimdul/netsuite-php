@@ -22,7 +22,10 @@ class GetSavedSearchResponse {
      * @var \NetSuite\Classes\GetSavedSearchResult
      */
     public $getSavedSearchResult;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "getSavedSearchResult" => "GetSavedSearchResult",
     );
 }

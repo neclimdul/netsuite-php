@@ -26,7 +26,10 @@ class RevRecTemplateSearchRow extends SearchRow {
      * @var \NetSuite\Classes\EmployeeSearchRowBasic
      */
     public $userJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "RevRecTemplateSearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",
     );

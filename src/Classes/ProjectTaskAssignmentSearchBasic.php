@@ -118,7 +118,10 @@ class ProjectTaskAssignmentSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $workCalendar;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "actualWork" => "SearchDoubleField",
         "cost" => "SearchDoubleField",
         "costBase" => "SearchDoubleField",

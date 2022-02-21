@@ -110,7 +110,10 @@ class TransactionShipGroup {
      * @var float
      */
     public $shippingTax2Amt;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "id" => "integer",
         "isFulfilled" => "boolean",
         "weight" => "float",

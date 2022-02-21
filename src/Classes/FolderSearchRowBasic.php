@@ -78,7 +78,10 @@ class FolderSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnSelectField[]
      */
     public $subsidiary;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "class" => "SearchColumnSelectField[]",
         "department" => "SearchColumnSelectField[]",
         "description" => "SearchColumnStringField[]",

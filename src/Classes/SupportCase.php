@@ -190,7 +190,10 @@ class SupportCase extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "escalationMessage" => "string",
         "lastReopenedDate" => "dateTime",
         "endDate" => "dateTime",

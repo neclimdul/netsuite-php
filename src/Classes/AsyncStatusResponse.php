@@ -22,7 +22,10 @@ class AsyncStatusResponse {
      * @var \NetSuite\Classes\AsyncStatusResult
      */
     public $asyncStatusResult;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "asyncStatusResult" => "AsyncStatusResult",
     );
 }

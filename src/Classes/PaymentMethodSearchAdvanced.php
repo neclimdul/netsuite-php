@@ -34,7 +34,10 @@ class PaymentMethodSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "PaymentMethodSearch",
         "columns" => "PaymentMethodSearchRow",
         "savedSearchId" => "string",

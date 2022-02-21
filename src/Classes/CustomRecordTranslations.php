@@ -30,7 +30,10 @@ class CustomRecordTranslations {
      * @var string
      */
     public $label;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "locale" => "Language",
         "language" => "string",
         "label" => "string",

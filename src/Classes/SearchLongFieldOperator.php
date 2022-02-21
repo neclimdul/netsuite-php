@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class SearchLongFieldOperator {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const between = "between";
     const NSempty = "empty";

@@ -106,7 +106,10 @@ class ManufacturingRoutingSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "autoCalculateLag" => "SearchColumnBooleanField[]",
         "billOfMaterials" => "SearchColumnSelectField[]",
         "externalId" => "SearchColumnSelectField[]",

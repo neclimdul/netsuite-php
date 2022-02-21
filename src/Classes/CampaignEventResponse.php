@@ -74,7 +74,10 @@ class CampaignEventResponse {
      * @var float
      */
     public $bouncedRatio;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "name" => "string",
         "type" => "string",
         "dateSent" => "dateTime",

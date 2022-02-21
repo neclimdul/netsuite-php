@@ -86,7 +86,10 @@ class FileSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchStringField
      */
     public $url;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "availableWithoutLogin" => "SearchBooleanField",
         "created" => "SearchDateField",
         "dateViewed" => "SearchDateField",

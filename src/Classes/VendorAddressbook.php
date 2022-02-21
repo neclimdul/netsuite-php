@@ -38,7 +38,10 @@ class VendorAddressbook {
      * @var \NetSuite\Classes\Address
      */
     public $addressbookAddress;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "defaultShipping" => "boolean",
         "defaultBilling" => "boolean",
         "label" => "string",

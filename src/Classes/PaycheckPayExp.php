@@ -38,7 +38,10 @@ class PaycheckPayExp {
      * @var float
      */
     public $amount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "apply" => "boolean",
         "line" => "integer",
         "origDoc" => "integer",

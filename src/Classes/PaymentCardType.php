@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class PaymentCardType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _credit = "_credit";
     const _debit = "_debit";

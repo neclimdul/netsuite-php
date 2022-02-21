@@ -138,7 +138,10 @@ class Paycheck extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "batchNumber" => "string",
         "createdDate" => "dateTime",
         "lastModifiedDate" => "dateTime",

@@ -18,6 +18,9 @@
 namespace NetSuite\Classes;
 
 class SearchRecordBasic extends SearchRecord {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
 }

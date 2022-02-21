@@ -50,7 +50,10 @@ class GetSelectValueFieldDescription {
      * @var \NetSuite\Classes\GetSelectFilterByFieldValueList
      */
     public $filterByValueList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "recordType" => "RecordType",
         "customRecordType" => "RecordRef",
         "customTransactionType" => "RecordRef",

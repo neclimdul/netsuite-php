@@ -134,7 +134,10 @@ class RevRecScheduleSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchBooleanField
      */
     public $useForeignAmounts;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accountingBook" => "SearchMultiSelectField",
         "amorStatus" => "SearchEnumMultiSelectField",
         "amortizedAmount" => "SearchDoubleField",

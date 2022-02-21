@@ -26,7 +26,10 @@ class GiftCertificateItemAuthCodesList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "authCodes" => "GiftCertificateItemAuthCodes[]",
         "replaceAll" => "boolean",
     );

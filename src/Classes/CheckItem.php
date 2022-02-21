@@ -118,7 +118,10 @@ class CheckItem {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "item" => "RecordRef",
         "vendorName" => "string",
         "line" => "integer",

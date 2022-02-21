@@ -1,12 +1,222 @@
 parameters:
 	ignoreErrors:
 		-
+			message: "#^Method spec\\\\NetSuite\\\\NetSuiteClientSpec\\:\\:it_is_initializable\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: spec/NetSuiteClientSpec.php
+
+		-
+			message: "#^Method spec\\\\NetSuite\\\\NetSuiteClientSpec\\:\\:let\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: spec/NetSuiteClientSpec.php
+
+		-
+			message: "#^Method spec\\\\NetSuite\\\\NetSuiteServiceSpec\\:\\:it_is_initializable\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: spec/NetSuiteServiceSpec.php
+
+		-
+			message: "#^Method spec\\\\NetSuite\\\\NetSuiteServiceSpec\\:\\:let\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: spec/NetSuiteServiceSpec.php
+
+		-
+			message: "#^Method NetSuite\\\\Logger\\:\\:__construct\\(\\) has parameter \\$path with no type specified\\.$#"
+			count: 1
+			path: src/Logger.php
+
+		-
+			message: "#^Method NetSuite\\\\Logger\\:\\:logSoapCall\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Logger.php
+
+		-
+			message: "#^Property NetSuite\\\\Logger\\:\\:\\$path has no type specified\\.$#"
+			count: 1
+			path: src/Logger.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:__construct\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:__construct\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:addHeader\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:clearHeader\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:clearPreferences\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:clearSearchPreferences\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:computeTokenPassportSignature\\(\\) has parameter \\$consumerSecret with no type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:createFromEnv\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:createOptions\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:createOptions\\(\\) has parameter \\$overrides with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:createOptions\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:createTokenPassportFromConfig\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:createWsdl\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:fixWtfCookieBug\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:generateTokenPassportNonce\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:generateTokenPassportNonce\\(\\) has parameter \\$length with no type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:getEnvConfig\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:logRequests\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:logSoapCall\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:setApplicationInfo\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:setDataCenterUrl\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:setLogPath\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:setPreferences\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:setSearchPreferences\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Method NetSuite\\\\NetSuiteClient\\:\\:validateConfig\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Property NetSuite\\\\NetSuiteClient\\:\\:\\$clientOptions type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Property NetSuite\\\\NetSuiteClient\\:\\:\\$config type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
+			message: "#^Property NetSuite\\\\NetSuiteClient\\:\\:\\$soapHeaders type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/NetSuiteClient.php
+
+		-
 			message: "#^Unsafe usage of new static\\(\\)\\.$#"
 			count: 1
 			path: src/NetSuiteClient.php
 
 		-
+			message: "#^Property NetSuite\\\\NetSuiteService\\:\\:\\$generated_from_endpoint has no type specified\\.$#"
+			count: 1
+			path: src/NetSuiteService.php
+
+		-
 			message: "#^Cannot access static property \\$paramtypesmap on class\\-string\\|false\\.$#"
+			count: 1
+			path: src/includes/functions.php
+
+		-
+			message: "#^Function cleanUpNamespaces\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/includes/functions.php
+
+		-
+			message: "#^Function cleanUpNamespaces\\(\\) has parameter \\$xml_root with no type specified\\.$#"
+			count: 1
+			path: src/includes/functions.php
+
+		-
+			message: "#^Function milliseconds\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/includes/functions.php
+
+		-
+			message: "#^Function setFields\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/includes/functions.php
+
+		-
+			message: "#^Function setFields\\(\\) has parameter \\$fieldArray with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/includes/functions.php
+
+		-
+			message: "#^Function setFields\\(\\) has parameter \\$object with no type specified\\.$#"
 			count: 1
 			path: src/includes/functions.php
 

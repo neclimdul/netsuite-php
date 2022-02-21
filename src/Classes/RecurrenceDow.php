@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class RecurrenceDow {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _sunday = "_sunday";
     const _monday = "_monday";

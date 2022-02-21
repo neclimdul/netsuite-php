@@ -82,7 +82,10 @@ class MessageSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $subject;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "author" => "SearchColumnSelectField[]",
         "authorEmail" => "SearchColumnStringField[]",
         "bcc" => "SearchColumnStringField[]",

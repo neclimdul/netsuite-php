@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CustomerNegativeNumberFormat {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _bracketSurrounded = "_bracketSurrounded";
     const _minusSigned = "_minusSigned";

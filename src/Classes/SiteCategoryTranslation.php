@@ -42,7 +42,10 @@ class SiteCategoryTranslation {
      * @var string
      */
     public $pageTitle;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "locale" => "Language",
         "language" => "string",
         "displayName" => "string",

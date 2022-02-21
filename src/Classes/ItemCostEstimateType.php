@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemCostEstimateType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _averageCost = "_averageCost";
     const _custom = "_custom";

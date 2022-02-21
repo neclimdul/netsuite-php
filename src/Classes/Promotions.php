@@ -26,7 +26,10 @@ class Promotions {
      * @var \NetSuite\Classes\RecordRef
      */
     public $couponCode;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "promoCode" => "RecordRef",
         "couponCode" => "RecordRef",
     );

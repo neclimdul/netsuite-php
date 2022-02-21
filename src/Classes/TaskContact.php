@@ -26,7 +26,10 @@ class TaskContact {
      * @var \NetSuite\Classes\RecordRef
      */
     public $contact;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "company" => "RecordRef",
         "contact" => "RecordRef",
     );

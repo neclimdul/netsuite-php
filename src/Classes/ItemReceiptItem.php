@@ -118,7 +118,10 @@ class ItemReceiptItem {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "itemReceive" => "boolean",
         "jobName" => "string",
         "item" => "RecordRef",

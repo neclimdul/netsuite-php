@@ -26,7 +26,10 @@ class ItemFulfillmentItemList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "item" => "ItemFulfillmentItem[]",
         "replaceAll" => "boolean",
     );

@@ -22,7 +22,10 @@ class ChangeEmailRequest {
      * @var \NetSuite\Classes\ChangeEmail
      */
     public $changeEmail;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "changeEmail" => "ChangeEmail",
     );
 }

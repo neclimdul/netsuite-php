@@ -58,7 +58,10 @@ class InventoryAssignment {
      * @var \NetSuite\Classes\RecordRef
      */
     public $toInventoryStatus;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "internalId" => "string",
         "issueInventoryNumber" => "RecordRef",
         "receiptInventoryNumber" => "string",

@@ -98,7 +98,10 @@ class InventoryAdjustmentInventory {
      * @var float
      */
     public $exchangeRate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "item" => "RecordRef",
         "line" => "integer",
         "inventoryDetail" => "InventoryDetail",

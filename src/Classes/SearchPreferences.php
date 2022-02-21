@@ -30,7 +30,10 @@ class SearchPreferences {
      * @var integer
      */
     public $pageSize;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "bodyFieldsOnly" => "boolean",
         "returnSearchColumns" => "boolean",
         "pageSize" => "integer",

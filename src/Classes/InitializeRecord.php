@@ -34,7 +34,10 @@ class InitializeRecord {
      * @var \NetSuite\Classes\InitializeRefList
      */
     public $referenceList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "type" => "InitializeType",
         "reference" => "InitializeRef",
         "auxReference" => "InitializeAuxRef",

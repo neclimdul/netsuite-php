@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemFulfillmentB13AFilingOptionFedEx {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _filedElectronically = "_filedElectronically";
     const _manuallyAttached = "_manuallyAttached";

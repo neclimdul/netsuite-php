@@ -22,7 +22,10 @@ class DocumentInfo {
      * @var string
      */
     public $nsId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "nsId" => "string",
     );
 }

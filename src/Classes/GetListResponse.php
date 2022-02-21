@@ -22,7 +22,10 @@ class GetListResponse {
      * @var \NetSuite\Classes\ReadResponseList
      */
     public $readResponseList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "readResponseList" => "ReadResponseList",
     );
 }

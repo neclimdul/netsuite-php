@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class PaymentInstrumentState {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _expired = "_expired";
     const _invalid = "_invalid";

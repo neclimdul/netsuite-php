@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CustomizationFieldType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _checkBox = "_checkBox";
     const _currency = "_currency";

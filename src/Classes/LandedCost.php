@@ -22,7 +22,10 @@ class LandedCost extends Record {
      * @var \NetSuite\Classes\LandedCostDataList
      */
     public $landedCostDataList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "landedCostDataList" => "LandedCostDataList",
     );
 }

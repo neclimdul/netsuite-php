@@ -34,7 +34,10 @@ class ManufacturingCostTemplateSearch extends SearchRecord {
      * @var \NetSuite\Classes\CustomSearchJoin[]
      */
     public $customSearchJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "ManufacturingCostTemplateSearchBasic",
         "itemJoin" => "ItemSearchBasic",
         "userJoin" => "EmployeeSearchBasic",

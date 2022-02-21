@@ -22,7 +22,10 @@ class DeletedRecordList {
      * @var \NetSuite\Classes\DeletedRecord[]
      */
     public $deletedRecord;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "deletedRecord" => "DeletedRecord[]",
     );
 }

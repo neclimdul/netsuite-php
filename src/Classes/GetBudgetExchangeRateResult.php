@@ -26,7 +26,10 @@ class GetBudgetExchangeRateResult {
      * @var \NetSuite\Classes\BudgetExchangeRateList
      */
     public $budgetExchangeRateList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "budgetExchangeRateList" => "BudgetExchangeRateList",
     );

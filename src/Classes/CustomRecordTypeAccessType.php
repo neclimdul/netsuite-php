@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CustomRecordTypeAccessType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _noPermissionRequired = "_noPermissionRequired";
     const _requireCustomRecordEntriesPermission = "_requireCustomRecordEntriesPermission";

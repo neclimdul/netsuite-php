@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class LandedCostSource {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _manual = "_manual";
     const _otherTransaction = "_otherTransaction";

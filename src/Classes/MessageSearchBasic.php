@@ -82,7 +82,10 @@ class MessageSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchStringField
      */
     public $subject;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "author" => "SearchMultiSelectField",
         "authorEmail" => "SearchStringField",
         "bcc" => "SearchStringField",

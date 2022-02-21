@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class EmployeeBaseWageType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _annualSalary = "_annualSalary";
     const _hourly = "_hourly";

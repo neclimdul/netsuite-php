@@ -38,7 +38,10 @@ class CustomListCustomValue {
      * @var \NetSuite\Classes\LanguageValueList
      */
     public $valueLanguageValueList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "value" => "string",
         "abbreviation" => "string",
         "isInactive" => "boolean",

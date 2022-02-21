@@ -26,7 +26,10 @@ class SearchMultiSelectField {
      * @var \NetSuite\Classes\SearchMultiSelectFieldOperator::*
      */
     public $operator;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchValue" => "RecordRef[]",
         "operator" => "SearchMultiSelectFieldOperator",
     );

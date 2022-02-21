@@ -34,7 +34,10 @@ class TransactionSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "TransactionSearch",
         "columns" => "TransactionSearchRow",
         "savedSearchId" => "string",

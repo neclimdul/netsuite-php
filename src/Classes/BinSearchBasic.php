@@ -54,7 +54,10 @@ class BinSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "binNumber" => "SearchStringField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",

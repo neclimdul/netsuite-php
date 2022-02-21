@@ -94,7 +94,10 @@ class PaymentInstrumentSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $preserveOnFile;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "cardBrand" => "SearchColumnStringField[]",
         "cardExpDate" => "SearchColumnDateField[]",
         "cardLastFourDigits" => "SearchColumnStringField[]",

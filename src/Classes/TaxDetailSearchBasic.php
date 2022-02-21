@@ -50,7 +50,10 @@ class TaxDetailSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $tranId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "account" => "SearchMultiSelectField",
         "lineNumber" => "SearchLongField",
         "taxAmount" => "SearchDoubleField",

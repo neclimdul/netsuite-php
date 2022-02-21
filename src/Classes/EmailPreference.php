@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class EmailPreference {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _default = "_default";
     const _hTML = "_hTML";

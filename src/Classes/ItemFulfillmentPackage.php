@@ -30,7 +30,10 @@ class ItemFulfillmentPackage {
      * @var string
      */
     public $packageTrackingNumber;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "packageWeight" => "float",
         "packageDescr" => "string",
         "packageTrackingNumber" => "string",

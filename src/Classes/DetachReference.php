@@ -22,7 +22,10 @@ class DetachReference {
      * @var \NetSuite\Classes\BaseRef
      */
     public $detachFrom;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "detachFrom" => "BaseRef",
     );
 }

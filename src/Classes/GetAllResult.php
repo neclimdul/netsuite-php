@@ -30,7 +30,10 @@ class GetAllResult {
      * @var \NetSuite\Classes\RecordList
      */
     public $recordList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "totalRecords" => "integer",
         "recordList" => "RecordList",

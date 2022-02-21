@@ -70,7 +70,10 @@ class SiteCategorySearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $urlComponent;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "dateViewed" => "SearchColumnDateField[]",
         "description" => "SearchColumnStringField[]",
         "excludeFromSitemap" => "SearchColumnBooleanField[]",

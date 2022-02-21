@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemCostAccountingStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _complete = "_complete";
     const _failed = "_failed";

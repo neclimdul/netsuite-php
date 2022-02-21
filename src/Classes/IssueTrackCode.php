@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class IssueTrackCode {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _never = "_never";
     const _onAnyChange = "_onAnyChange";

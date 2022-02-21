@@ -34,7 +34,10 @@ class GetPostingTransactionSummaryRequest {
      * @var string
      */
     public $operationId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "fields" => "PostingTransactionSummaryField",
         "filters" => "PostingTransactionSummaryFilter",
         "pageIndex" => "integer",

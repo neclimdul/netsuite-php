@@ -30,7 +30,10 @@ class SubsidiaryAccountingBookDetail {
      * @var \NetSuite\Classes\AccountingBookStatus
      */
     public $bookStatus;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accountingBook" => "RecordRef",
         "currency" => "RecordRef",
         "bookStatus" => "AccountingBookStatus",

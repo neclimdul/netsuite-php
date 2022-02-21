@@ -34,7 +34,10 @@ class ItemBinNumberSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnDoubleField[]
      */
     public $quantityOnHand;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "binNumber" => "SearchColumnSelectField[]",
         "location" => "SearchColumnSelectField[]",
         "quantityAvailable" => "SearchColumnDoubleField[]",

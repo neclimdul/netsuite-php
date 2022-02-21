@@ -42,7 +42,10 @@ class PeriodEndJournalLine {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "account" => "RecordRef",
         "debit" => "float",
         "credit" => "float",

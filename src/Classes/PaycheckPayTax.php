@@ -58,7 +58,10 @@ class PaycheckPayTax {
      * @var float
      */
     public $amount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "line" => "integer",
         "apply" => "boolean",
         "payTax" => "string",

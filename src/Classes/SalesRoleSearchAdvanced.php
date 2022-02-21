@@ -34,7 +34,10 @@ class SalesRoleSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "SalesRoleSearch",
         "columns" => "SalesRoleSearchRow",
         "savedSearchId" => "string",

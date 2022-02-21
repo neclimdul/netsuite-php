@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class TextFileEncoding {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _big5 = "_big5";
     const _gb2312 = "_gb2312";

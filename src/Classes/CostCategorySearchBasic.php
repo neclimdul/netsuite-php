@@ -50,7 +50,10 @@ class CostCategorySearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchStringField
      */
     public $name;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "account" => "SearchMultiSelectField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",

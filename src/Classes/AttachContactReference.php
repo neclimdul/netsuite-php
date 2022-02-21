@@ -26,7 +26,10 @@ class AttachContactReference extends AttachReference {
      * @var \NetSuite\Classes\RecordRef
      */
     public $contactRole;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "contact" => "RecordRef",
         "contactRole" => "RecordRef",
     );

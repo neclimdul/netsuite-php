@@ -22,7 +22,10 @@ class StringDimensionRef extends DimensionRef {
      * @var string
      */
     public $value;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "value" => "string",
     );
 }

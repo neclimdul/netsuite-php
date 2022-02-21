@@ -30,7 +30,10 @@ class ServiceItemTaskTemplates {
      * @var \NetSuite\Classes\Duration
      */
     public $taskDuration;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "taskName" => "string",
         "taskStartOffset" => "integer",
         "taskDuration" => "Duration",

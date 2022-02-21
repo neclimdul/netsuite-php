@@ -62,7 +62,10 @@ class ProjectTaskSearchRow extends SearchRow {
      * @var \NetSuite\Classes\CustomSearchRowBasic[]
      */
     public $customSearchJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "ProjectTaskSearchRowBasic",
         "jobJoin" => "JobSearchRowBasic",
         "predecessorJoin" => "ProjectTaskSearchRowBasic",

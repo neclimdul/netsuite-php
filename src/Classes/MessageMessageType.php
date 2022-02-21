@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class MessageMessageType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _email = "_email";
     const _emailedReport = "_emailedReport";

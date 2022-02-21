@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ScheduleBCode {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _1000 = "_1000";
     const _1000cubicMeters = "_1000cubicMeters";

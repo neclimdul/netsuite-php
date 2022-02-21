@@ -22,7 +22,10 @@ class BillingScheduleSearchRow extends SearchRow {
      * @var \NetSuite\Classes\BillingScheduleSearchRowBasic
      */
     public $basic;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "BillingScheduleSearchRowBasic",
     );
 }

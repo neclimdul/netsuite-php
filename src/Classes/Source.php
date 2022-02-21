@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class Source {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _adp = "_adp";
     const _automatedMemorizedTransaction = "_automatedMemorizedTransaction";

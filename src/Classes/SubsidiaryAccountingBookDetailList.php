@@ -26,7 +26,10 @@ class SubsidiaryAccountingBookDetailList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "subsidiaryAccountingBookDetail" => "SubsidiaryAccountingBookDetail[]",
         "replaceAll" => "boolean",
     );

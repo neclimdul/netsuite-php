@@ -26,7 +26,10 @@ class InstallmentList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "installment" => "Installment[]",
         "replaceAll" => "boolean",
     );

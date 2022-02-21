@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class TransferOrderItemCommitInventory {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _availableQty = "_availableQty";
     const _completeQty = "_completeQty";

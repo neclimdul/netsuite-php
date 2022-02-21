@@ -30,7 +30,10 @@ class IssueVersion {
      * @var \NetSuite\Classes\RecordRef
      */
     public $build;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "primary" => "boolean",
         "version" => "RecordRef",
         "build" => "RecordRef",

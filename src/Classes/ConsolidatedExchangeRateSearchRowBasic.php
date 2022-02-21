@@ -74,7 +74,10 @@ class ConsolidatedExchangeRateSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $toSubsidiary;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accountingBook" => "SearchColumnStringField[]",
         "averageRate" => "SearchColumnStringField[]",
         "closed" => "SearchColumnBooleanField[]",

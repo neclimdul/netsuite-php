@@ -38,7 +38,10 @@ class InventoryCostRevaluationCostComponent {
      * @var \NetSuite\Classes\RecordRef
      */
     public $costCategory;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "cost" => "float",
         "componentItem" => "RecordRef",
         "quantity" => "float",

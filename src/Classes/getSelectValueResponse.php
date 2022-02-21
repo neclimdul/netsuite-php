@@ -22,7 +22,10 @@ class getSelectValueResponse {
      * @var \NetSuite\Classes\GetSelectValueResult
      */
     public $getSelectValueResult;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "getSelectValueResult" => "GetSelectValueResult",
     );
 }

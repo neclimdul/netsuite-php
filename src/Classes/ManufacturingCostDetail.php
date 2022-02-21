@@ -34,7 +34,10 @@ class ManufacturingCostDetail {
      * @var float
      */
     public $runRate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "costCategory" => "RecordRef",
         "item" => "RecordRef",
         "fixedRate" => "float",

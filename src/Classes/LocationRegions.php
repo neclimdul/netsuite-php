@@ -22,7 +22,10 @@ class LocationRegions {
      * @var \NetSuite\Classes\RecordRef
      */
     public $region;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "region" => "RecordRef",
     );
 }

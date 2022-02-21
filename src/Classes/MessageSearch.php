@@ -82,7 +82,10 @@ class MessageSearch extends SearchRecord {
      * @var \NetSuite\Classes\VendorSearchBasic
      */
     public $vendorJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "MessageSearchBasic",
         "attachmentsJoin" => "FileSearchBasic",
         "authorJoin" => "EntitySearchBasic",

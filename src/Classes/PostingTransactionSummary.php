@@ -62,7 +62,10 @@ class PostingTransactionSummary {
      * @var float
      */
     public $amount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "period" => "RecordRef",
         "account" => "RecordRef",
         "parentItem" => "RecordRef",

@@ -34,7 +34,10 @@ class StatusDetail {
      * @var \NetSuite\Classes\StatusDetailType
      */
     public $type;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "code" => "StatusDetailCodeType",
         "message" => "string",
         "afterSubmitFailed" => "boolean",

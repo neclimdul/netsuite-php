@@ -34,7 +34,10 @@ class InterCompanyJournalEntryAccountingBookDetail {
      * @var float
      */
     public $exchangeRate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accountingBook" => "RecordRef",
         "currency" => "RecordRef",
         "subsidiary" => "RecordRef",

@@ -86,7 +86,10 @@ class FairValuePriceSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnSelectField[]
      */
     public $unitsType;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "currency" => "SearchColumnSelectField[]",
         "endDate" => "SearchColumnDateField[]",
         "externalId" => "SearchColumnSelectField[]",

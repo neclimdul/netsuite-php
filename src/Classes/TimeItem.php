@@ -110,7 +110,10 @@ class TimeItem {
      * @var boolean
      */
     public $isExempt;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "id" => "integer",
         "employee" => "RecordRef",
         "timeType" => "TimeItemTimeType",

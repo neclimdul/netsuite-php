@@ -22,7 +22,10 @@ class RateList {
      * @var \NetSuite\Classes\Rate[]
      */
     public $rate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "rate" => "Rate[]",
     );
 }

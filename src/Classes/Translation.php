@@ -70,7 +70,10 @@ class Translation {
      * @var string
      */
     public $outOfStockMessage;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "locale" => "Language",
         "language" => "string",
         "displayName" => "string",

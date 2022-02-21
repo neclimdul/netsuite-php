@@ -30,7 +30,10 @@ class VendorCurrency {
      * @var float
      */
     public $unbilledOrders;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "currency" => "RecordRef",
         "balance" => "float",
         "unbilledOrders" => "float",

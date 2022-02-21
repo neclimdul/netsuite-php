@@ -46,7 +46,10 @@ class AssemblyComponent {
      * @var integer
      */
     public $lineNumber;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "item" => "RecordRef",
         "quantity" => "float",
         "quantityOnHand" => "float",

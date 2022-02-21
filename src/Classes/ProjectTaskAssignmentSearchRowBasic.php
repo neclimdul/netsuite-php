@@ -114,7 +114,10 @@ class ProjectTaskAssignmentSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnSelectField[]
      */
     public $workCalendar;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "actualWork" => "SearchColumnDoubleField[]",
         "cost" => "SearchColumnDoubleField[]",
         "costBase" => "SearchColumnDoubleField[]",

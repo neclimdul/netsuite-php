@@ -34,7 +34,10 @@ class CustomerItemPricing {
      * @var float
      */
     public $price;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "item" => "RecordRef",
         "level" => "RecordRef",
         "currency" => "RecordRef",

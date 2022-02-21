@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class BillingScheduleRecurrenceRecurrenceUnits {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _custom = "_custom";
     const _days = "_days";

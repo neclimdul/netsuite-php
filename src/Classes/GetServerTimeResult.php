@@ -26,7 +26,10 @@ class GetServerTimeResult {
      * @var string
      */
     public $serverTime;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "serverTime" => "dateTime",
     );

@@ -26,7 +26,10 @@ class CustomSearchRowBasic {
      * @var \NetSuite\Classes\SearchRowBasic
      */
     public $searchRowBasic;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "customizationRef" => "CustomizationRef",
         "searchRowBasic" => "SearchRowBasic",
     );

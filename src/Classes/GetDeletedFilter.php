@@ -30,7 +30,10 @@ class GetDeletedFilter {
      * @var \NetSuite\Classes\SearchStringField
      */
     public $scriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "deletedDate" => "SearchDateField",
         "type" => "SearchEnumMultiSelectField",
         "scriptId" => "SearchStringField",

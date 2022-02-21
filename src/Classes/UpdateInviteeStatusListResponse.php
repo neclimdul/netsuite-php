@@ -22,7 +22,10 @@ class UpdateInviteeStatusListResponse {
      * @var \NetSuite\Classes\WriteResponseList
      */
     public $writeResponseList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "writeResponseList" => "WriteResponseList",
     );
 }

@@ -26,7 +26,10 @@ class OriginatingLeadSearch extends SearchRecord {
      * @var \NetSuite\Classes\CustomSearchJoin[]
      */
     public $customSearchJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "OriginatingLeadSearchBasic",
         "customSearchJoin" => "CustomSearchJoin[]",
     );

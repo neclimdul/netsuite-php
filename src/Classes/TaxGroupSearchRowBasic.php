@@ -102,7 +102,10 @@ class TaxGroupSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $zip;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "city" => "SearchColumnStringField[]",
         "country" => "SearchColumnEnumSelectField[]",
         "county" => "SearchColumnStringField[]",

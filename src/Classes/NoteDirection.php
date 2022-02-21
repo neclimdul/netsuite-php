@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class NoteDirection {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _incoming = "_incoming";
     const _outgoing = "_outgoing";

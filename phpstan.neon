@@ -1,7 +1,10 @@
 includes:
   - phpstan-baseline.neon
 parameters:
-  level: 5
+  level: 6
   paths:
     - src
     - spec
+  ignoreErrors:
+    - '#Function Netsuite\\.*\(\) has no return type specified\.#'
+    - '#Function Netsuite\\.*\(\) has parameter \$.* with no type specified\.#'

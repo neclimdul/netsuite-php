@@ -50,7 +50,10 @@ class ItemRevision extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "item" => "RecordRef",
         "name" => "string",
         "effectiveDate" => "dateTime",

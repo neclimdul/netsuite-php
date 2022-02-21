@@ -58,7 +58,10 @@ class LocationBusinessHours {
      * @var string
      */
     public $sameDayPickupCutOffTime;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "startTime" => "dateTime",
         "endTime" => "dateTime",
         "isSunday" => "boolean",

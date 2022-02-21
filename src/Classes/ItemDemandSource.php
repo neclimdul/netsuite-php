@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemDemandSource {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _enteredAndPlannedOrders = "_enteredAndPlannedOrders";
     const _forecastAndOrders = "_forecastAndOrders";

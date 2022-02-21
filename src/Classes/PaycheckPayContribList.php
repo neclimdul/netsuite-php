@@ -26,7 +26,10 @@ class PaycheckPayContribList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "paycheckPayContrib" => "PaycheckPayContrib[]",
         "replaceAll" => "boolean",
     );

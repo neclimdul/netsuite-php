@@ -50,7 +50,10 @@ class ItemAccountingBookDetail {
      * @var boolean
      */
     public $sameAsPrimaryAmortization;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accountingBook" => "RecordRef",
         "createRevenuePlansOn" => "RecordRef",
         "revenueRecognitionRule" => "RecordRef",

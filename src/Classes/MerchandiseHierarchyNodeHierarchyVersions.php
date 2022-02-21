@@ -42,7 +42,10 @@ class MerchandiseHierarchyNodeHierarchyVersions {
      * @var \NetSuite\Classes\RecordRef
      */
     public $parentNode;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "isIncluded" => "boolean",
         "hierarchyVersion" => "RecordRef",
         "startDate" => "dateTime",

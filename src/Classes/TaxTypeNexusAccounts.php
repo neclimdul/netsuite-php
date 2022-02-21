@@ -30,7 +30,10 @@ class TaxTypeNexusAccounts {
      * @var \NetSuite\Classes\RecordRef
      */
     public $receivablesAccount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "nexus" => "RecordRef",
         "payablesAccount" => "RecordRef",
         "receivablesAccount" => "RecordRef",

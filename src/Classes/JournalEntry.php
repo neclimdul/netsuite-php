@@ -138,7 +138,10 @@ class JournalEntry extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "postingPeriod" => "RecordRef",
         "tranDate" => "dateTime",
         "currency" => "RecordRef",

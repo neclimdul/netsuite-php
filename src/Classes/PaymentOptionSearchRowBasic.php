@@ -38,7 +38,10 @@ class PaymentOptionSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $preserveOnFile;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "internalId" => "SearchColumnSelectField[]",
         "mask" => "SearchColumnStringField[]",
         "paymentInstrumentType" => "SearchColumnEnumSelectField[]",

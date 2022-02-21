@@ -254,7 +254,10 @@ class Partner extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "customForm" => "RecordRef",
         "entityId" => "string",
         "altName" => "string",

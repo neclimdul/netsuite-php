@@ -178,7 +178,10 @@ class InboundShipmentSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "actualDeliveryDate" => "SearchColumnDateField[]",
         "actualShippingDate" => "SearchColumnDateField[]",
         "billOfLading" => "SearchColumnStringField[]",

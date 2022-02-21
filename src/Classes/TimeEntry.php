@@ -110,7 +110,10 @@ class TimeEntry extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "hours" => "Duration",
         "createdDate" => "dateTime",
         "lastModifiedDate" => "dateTime",

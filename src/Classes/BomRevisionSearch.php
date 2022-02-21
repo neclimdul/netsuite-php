@@ -38,7 +38,10 @@ class BomRevisionSearch extends SearchRecord {
      * @var \NetSuite\Classes\CustomSearchJoin[]
      */
     public $customSearchJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "BomRevisionSearchBasic",
         "billOfMaterialsJoin" => "BomSearchBasic",
         "componentJoin" => "BomRevisionComponentSearchBasic",

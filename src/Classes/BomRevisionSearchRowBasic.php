@@ -58,7 +58,10 @@ class BomRevisionSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "billOfMaterials" => "SearchColumnSelectField[]",
         "createdDate" => "SearchColumnDateField[]",
         "effectiveEndDate" => "SearchColumnDateField[]",

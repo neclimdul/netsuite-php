@@ -70,7 +70,10 @@ class CustomRecordTypePermissions {
      * @var boolean
      */
     public $restrictSublistView;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "permittedRole" => "RecordRef",
         "permittedLevel" => "CustomRecordTypePermissionsPermittedLevel",
         "restriction" => "CustomRecordTypePermissionsRestriction",

@@ -86,7 +86,10 @@ class AccountingPeriodSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchDateField
      */
     public $startDate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "allLocked" => "SearchBooleanField",
         "allowNonGlChanges" => "SearchBooleanField",
         "apLocked" => "SearchBooleanField",

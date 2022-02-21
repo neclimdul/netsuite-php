@@ -30,7 +30,10 @@ class SearchLongField {
      * @var \NetSuite\Classes\SearchLongFieldOperator::*
      */
     public $operator;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchValue" => "integer",
         "searchValue2" => "integer",
         "operator" => "SearchLongFieldOperator",

@@ -58,7 +58,10 @@ class CustomerSubsidiaryRelationshipSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "balance" => "SearchColumnDoubleField[]",
         "depositbalance" => "SearchColumnDoubleField[]",
         "entity" => "SearchColumnSelectField[]",

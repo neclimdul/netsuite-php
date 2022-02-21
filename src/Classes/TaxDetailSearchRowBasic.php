@@ -54,7 +54,10 @@ class TaxDetailSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnLongField[]
      */
     public $tranId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "account" => "SearchColumnStringField[]",
         "details" => "SearchColumnStringField[]",
         "lineNumber" => "SearchColumnLongField[]",

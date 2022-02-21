@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class LandedCostMethod {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _quantity = "_quantity";
     const _value = "_value";

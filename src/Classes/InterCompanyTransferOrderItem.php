@@ -102,7 +102,10 @@ class InterCompanyTransferOrderItem {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "item" => "RecordRef",
         "line" => "integer",
         "quantityAvailable" => "float",

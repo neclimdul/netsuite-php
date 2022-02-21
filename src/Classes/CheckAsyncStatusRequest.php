@@ -22,7 +22,10 @@ class CheckAsyncStatusRequest {
      * @var string
      */
     public $jobId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "jobId" => "string",
     );
 }

@@ -46,7 +46,10 @@ class CustomerStatusSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $probability;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "description" => "SearchColumnStringField[]",
         "externalId" => "SearchColumnSelectField[]",
         "includeInLeadReports" => "SearchColumnBooleanField[]",

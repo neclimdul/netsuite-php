@@ -74,7 +74,10 @@ class PaycheckSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnDoubleField[]
      */
     public $taxableWages;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "account" => "SearchColumnSelectField[]",
         "amendedDate" => "SearchColumnDateField[]",
         "amount" => "SearchColumnDoubleField[]",

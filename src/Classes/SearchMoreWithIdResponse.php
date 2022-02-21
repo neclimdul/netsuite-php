@@ -22,7 +22,10 @@ class SearchMoreWithIdResponse {
      * @var \NetSuite\Classes\SearchResult
      */
     public $searchResult;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchResult" => "SearchResult",
     );
 }

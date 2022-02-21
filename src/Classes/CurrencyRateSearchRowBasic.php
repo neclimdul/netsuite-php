@@ -38,7 +38,10 @@ class CurrencyRateSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnSelectField[]
      */
     public $transactionCurrency;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "baseCurrency" => "SearchColumnSelectField[]",
         "effectiveDate" => "SearchColumnDateField[]",
         "exchangeRate" => "SearchColumnDoubleField[]",

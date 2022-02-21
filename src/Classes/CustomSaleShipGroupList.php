@@ -26,7 +26,10 @@ class CustomSaleShipGroupList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "customSaleShipgroup" => "CustomSaleShipGroup[]",
         "replaceAll" => "boolean",
     );

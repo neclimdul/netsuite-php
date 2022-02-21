@@ -82,7 +82,10 @@ class ItemSupplyPlanSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",
         "internalId" => "SearchMultiSelectField",

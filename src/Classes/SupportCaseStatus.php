@@ -54,7 +54,10 @@ class SupportCaseStatus extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "name" => "string",
         "insertBefore" => "RecordRef",
         "stage" => "SupportCaseStatusStage",

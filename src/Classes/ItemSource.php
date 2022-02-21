@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemSource {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _stock = "_stock";
     const _phantom = "_phantom";

@@ -22,7 +22,10 @@ class GetDeletedResponse {
      * @var \NetSuite\Classes\GetDeletedResult
      */
     public $getDeletedResult;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "getDeletedResult" => "GetDeletedResult",
     );
 }

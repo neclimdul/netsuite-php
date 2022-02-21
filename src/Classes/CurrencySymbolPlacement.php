@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CurrencySymbolPlacement {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _afterNumber = "_afterNumber";
     const _beforeNumber = "_beforeNumber";

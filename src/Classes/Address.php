@@ -74,7 +74,10 @@ class Address extends Record {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "internalId" => "string",
         "country" => "Country",
         "attention" => "string",

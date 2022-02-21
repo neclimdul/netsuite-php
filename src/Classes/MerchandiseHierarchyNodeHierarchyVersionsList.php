@@ -26,7 +26,10 @@ class MerchandiseHierarchyNodeHierarchyVersionsList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "merchandiseHierarchyNodeHierarchyVersions" => "MerchandiseHierarchyNodeHierarchyVersions[]",
         "replaceAll" => "boolean",
     );

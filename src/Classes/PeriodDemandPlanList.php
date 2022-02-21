@@ -22,7 +22,10 @@ class PeriodDemandPlanList {
      * @var \NetSuite\Classes\PeriodDemandPlan[]
      */
     public $periodDemandPlan;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "periodDemandPlan" => "PeriodDemandPlan[]",
     );
 }

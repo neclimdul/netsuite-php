@@ -22,7 +22,10 @@ class SelectCustomFieldRef extends CustomFieldRef {
      * @var \NetSuite\Classes\ListOrRecordRef
      */
     public $value;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "value" => "ListOrRecordRef",
     );
 }

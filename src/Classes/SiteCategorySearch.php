@@ -30,7 +30,10 @@ class SiteCategorySearch extends SearchRecord {
      * @var \NetSuite\Classes\EmployeeSearchBasic
      */
     public $userJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "SiteCategorySearchBasic",
         "shopperJoin" => "CustomerSearchBasic",
         "userJoin" => "EmployeeSearchBasic",

@@ -54,7 +54,10 @@ class EmployeeHcmPosition {
      * @var \NetSuite\Classes\RecordRef
      */
     public $location;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "position" => "RecordRef",
         "primaryPosition" => "boolean",
         "positionId" => "string",

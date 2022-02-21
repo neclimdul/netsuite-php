@@ -138,7 +138,10 @@ class Charge extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "customForm" => "RecordRef",
         "salesOrder" => "RecordRef",
         "billTo" => "RecordRef",

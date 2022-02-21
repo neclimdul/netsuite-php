@@ -22,7 +22,10 @@ class GroupMemberSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\RecordRef
      */
     public $groupId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "groupId" => "RecordRef",
     );
 }

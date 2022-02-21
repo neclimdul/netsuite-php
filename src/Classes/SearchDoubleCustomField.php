@@ -30,7 +30,10 @@ class SearchDoubleCustomField extends SearchCustomField {
      * @var \NetSuite\Classes\SearchDoubleFieldOperator::*
      */
     public $operator;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchValue" => "float",
         "searchValue2" => "float",
         "operator" => "SearchDoubleFieldOperator",

@@ -730,7 +730,10 @@ class OriginatingLeadSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accountNumber" => "SearchColumnStringField[]",
         "address" => "SearchColumnStringField[]",
         "address1" => "SearchColumnStringField[]",

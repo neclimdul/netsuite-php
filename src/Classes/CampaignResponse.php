@@ -58,7 +58,10 @@ class CampaignResponse extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "entity" => "RecordRef",
         "leadSource" => "RecordRef",
         "campaignEvent" => "RecordRef",

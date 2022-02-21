@@ -26,7 +26,10 @@ class PricingMatrix {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "pricing" => "Pricing[]",
         "replaceAll" => "boolean",
     );

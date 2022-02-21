@@ -142,7 +142,10 @@ class AccountingTransactionSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnDoubleField[]
      */
     public $vsoeAllocation;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "account" => "SearchColumnSelectField[]",
         "accountingBook" => "SearchColumnSelectField[]",
         "accountType" => "SearchColumnStringField[]",

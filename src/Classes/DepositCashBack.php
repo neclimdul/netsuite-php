@@ -42,7 +42,10 @@ class DepositCashBack {
      * @var string
      */
     public $memo;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "amount" => "float",
         "account" => "RecordRef",
         "department" => "RecordRef",

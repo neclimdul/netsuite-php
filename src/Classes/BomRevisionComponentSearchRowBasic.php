@@ -74,7 +74,10 @@ class BomRevisionComponentSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "bomQuantity" => "SearchColumnDoubleField[]",
         "bomRevision" => "SearchColumnSelectField[]",
         "componentYield" => "SearchColumnDoubleField[]",

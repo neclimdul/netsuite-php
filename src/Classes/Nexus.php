@@ -62,7 +62,10 @@ class Nexus extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "country" => "Country",
         "state" => "RecordRef",
         "taxAgency" => "RecordRef",

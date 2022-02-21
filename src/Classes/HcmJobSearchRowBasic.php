@@ -50,7 +50,10 @@ class HcmJobSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "description" => "SearchColumnStringField[]",
         "employmentCategory" => "SearchColumnSelectField[]",
         "externalId" => "SearchColumnSelectField[]",

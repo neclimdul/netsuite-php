@@ -34,7 +34,10 @@ class DemandPlan {
      * @var \NetSuite\Classes\PeriodDemandPlanList
      */
     public $periodDemandPlanList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "startDate" => "dateTime",
         "endDate" => "dateTime",
         "calculatedQuantity" => "float",

@@ -162,7 +162,10 @@ class EntitySearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "address" => "SearchStringField",
         "addressee" => "SearchStringField",
         "addressLabel" => "SearchStringField",

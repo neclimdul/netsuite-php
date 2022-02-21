@@ -38,7 +38,10 @@ class LeadSource extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "name" => "string",
         "description" => "string",
         "isInactive" => "boolean",

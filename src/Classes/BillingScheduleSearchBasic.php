@@ -86,7 +86,10 @@ class BillingScheduleSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchEnumMultiSelectField
      */
     public $type;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "applyToSubtotal" => "SearchBooleanField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",

@@ -26,7 +26,10 @@ class CalendarEventResource {
      * @var string
      */
     public $location;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "resource" => "RecordRef",
         "location" => "string",
     );

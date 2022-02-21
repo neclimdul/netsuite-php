@@ -46,7 +46,10 @@ class CustomListSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $scriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "description" => "SearchColumnStringField[]",
         "internalId" => "SearchColumnSelectField[]",
         "isInactive" => "SearchColumnBooleanField[]",

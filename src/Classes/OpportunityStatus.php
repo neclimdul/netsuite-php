@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class OpportunityStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _closedLost = "_closedLost";
     const _closedWon = "_closedWon";

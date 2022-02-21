@@ -30,7 +30,10 @@ class IssueRelatedIssues {
      * @var string
      */
     public $relationshipComment;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "relationship" => "IssueRelationship",
         "issueNumber" => "RecordRef",
         "relationshipComment" => "string",

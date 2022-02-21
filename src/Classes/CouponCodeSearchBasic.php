@@ -62,7 +62,10 @@ class CouponCodeSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchBooleanField
      */
     public $used;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "code" => "SearchStringField",
         "dateSent" => "SearchDateField",
         "externalId" => "SearchMultiSelectField",

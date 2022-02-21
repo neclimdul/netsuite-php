@@ -46,7 +46,10 @@ class TimeSheetTimeGrid {
      * @var \NetSuite\Classes\TimeEntry
      */
     public $saturday;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "sunday" => "TimeEntry",
         "monday" => "TimeEntry",
         "tuesday" => "TimeEntry",

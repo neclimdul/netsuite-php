@@ -42,7 +42,10 @@ class SupportCaseType extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "name" => "string",
         "insertBefore" => "RecordRef",
         "description" => "string",

@@ -110,7 +110,10 @@ class AccountSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accountingContext" => "SearchMultiSelectField",
         "balance" => "SearchDoubleField",
         "cashFlowRateType" => "SearchEnumMultiSelectField",

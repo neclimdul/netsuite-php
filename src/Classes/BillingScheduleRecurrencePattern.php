@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class BillingScheduleRecurrencePattern {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _anniversaryBillDate = "_anniversaryBillDate";
     const _fixedBillDate = "_fixedBillDate";

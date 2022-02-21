@@ -54,7 +54,10 @@ class CustomerDepositApply {
      * @var string
      */
     public $job;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "doc" => "integer",
         "line" => "integer",
         "apply" => "boolean",

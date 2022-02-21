@@ -22,7 +22,10 @@ class GetSelectFilterByFieldValueList {
      * @var \NetSuite\Classes\GetSelectFilterByFieldValue[]
      */
     public $filterBy;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "filterBy" => "GetSelectFilterByFieldValue[]",
     );
 }

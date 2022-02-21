@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class TaxFractionUnit {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _001andBelow = "_001andBelow";
     const _01andBelow = "_01andBelow";

@@ -34,7 +34,10 @@ class PricingGroupSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "PricingGroupSearch",
         "columns" => "PricingGroupSearchRow",
         "savedSearchId" => "string",

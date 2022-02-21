@@ -62,7 +62,10 @@ class CampaignDirectMail {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "internalId" => "string",
         "campaignGroup" => "RecordRef",
         "template" => "RecordRef",

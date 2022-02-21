@@ -58,7 +58,10 @@ class PostingTransactionSummaryField {
      * @var boolean
      */
     public $book;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "period" => "boolean",
         "account" => "boolean",
         "parentItem" => "boolean",

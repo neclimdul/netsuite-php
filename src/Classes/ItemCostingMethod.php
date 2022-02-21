@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemCostingMethod {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _average = "_average";
     const _fifo = "_fifo";

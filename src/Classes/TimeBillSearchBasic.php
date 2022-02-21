@@ -150,7 +150,10 @@ class TimeBillSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "approvalStatus" => "SearchMultiSelectField",
         "approved" => "SearchBooleanField",
         "billable" => "SearchBooleanField",

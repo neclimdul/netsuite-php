@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class AsyncStatusType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const failed = "failed";
     const finishedWithErrors = "finishedWithErrors";

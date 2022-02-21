@@ -38,7 +38,10 @@ class CustomRecordTypeSublists {
      * @var string
      */
     public $recordId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "recordSearch" => "RecordRef",
         "recordDescr" => "string",
         "recordDescrLanguageValueList" => "LanguageValueList",

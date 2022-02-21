@@ -34,7 +34,10 @@ class WinLossReason extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "name" => "string",
         "isInactive" => "boolean",
         "internalId" => "string",

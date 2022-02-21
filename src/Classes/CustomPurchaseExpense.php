@@ -94,7 +94,10 @@ class CustomPurchaseExpense {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "line" => "integer",
         "category" => "RecordRef",
         "account" => "RecordRef",

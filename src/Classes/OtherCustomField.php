@@ -166,7 +166,10 @@ class OtherCustomField extends CustomFieldType {
      * @var string
      */
     public $internalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "recType" => "RecordRef",
         "label" => "string",
         "owner" => "RecordRef",

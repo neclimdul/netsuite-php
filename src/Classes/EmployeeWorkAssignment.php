@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class EmployeeWorkAssignment {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _job = "_job";
     const _position = "_position";

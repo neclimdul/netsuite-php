@@ -50,7 +50,10 @@ class CustomListSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchStringField
      */
     public $scriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "description" => "SearchStringField",
         "internalId" => "SearchMultiSelectField",
         "internalIdNumber" => "SearchLongField",

@@ -58,7 +58,10 @@ class PaycheckPayTime {
      * @var float
      */
     public $amount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "apply" => "boolean",
         "line" => "integer",
         "payItem" => "integer",

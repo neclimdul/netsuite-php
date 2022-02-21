@@ -30,7 +30,10 @@ class CustomRecordTypeTabs {
      * @var \NetSuite\Classes\LanguageValueList
      */
     public $tabTitleLanguageValueList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "tabTitle" => "string",
         "tabParent" => "RecordRef",
         "tabTitleLanguageValueList" => "LanguageValueList",

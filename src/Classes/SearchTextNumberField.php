@@ -30,7 +30,10 @@ class SearchTextNumberField {
      * @var \NetSuite\Classes\SearchTextNumberFieldOperator::*
      */
     public $operator;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchValue" => "string",
         "searchValue2" => "string",
         "operator" => "SearchTextNumberFieldOperator",

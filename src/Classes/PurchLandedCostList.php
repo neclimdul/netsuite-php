@@ -26,7 +26,10 @@ class PurchLandedCostList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "landedCost" => "LandedCostSummary[]",
         "replaceAll" => "boolean",
     );

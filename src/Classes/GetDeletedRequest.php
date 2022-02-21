@@ -26,7 +26,10 @@ class GetDeletedRequest {
      * @var integer
      */
     public $pageIndex;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "getDeletedFilter" => "GetDeletedFilter",
         "pageIndex" => "integer",
     );

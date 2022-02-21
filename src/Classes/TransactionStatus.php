@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class TransactionStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _billCancelled = "_billCancelled";
     const _billOpen = "_billOpen";

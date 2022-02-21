@@ -26,7 +26,10 @@ class TimeSheetTimeGridList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "timeSheetTimeGrid" => "TimeSheetTimeGrid[]",
         "replaceAll" => "boolean",
     );

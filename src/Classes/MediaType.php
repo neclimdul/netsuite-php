@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class MediaType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _APPCACHE = "_APPCACHE";
     const _AUTOCAD = "_AUTOCAD";

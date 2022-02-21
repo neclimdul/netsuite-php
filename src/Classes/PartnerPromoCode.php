@@ -30,7 +30,10 @@ class PartnerPromoCode {
      * @var string
      */
     public $endDate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "promoCode" => "RecordRef",
         "discount" => "string",
         "endDate" => "dateTime",

@@ -22,7 +22,10 @@ class SerializedInventoryItemNumbers {
      * @var \NetSuite\Classes\RecordRef
      */
     public $serialNumber;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "serialNumber" => "RecordRef",
     );
 }

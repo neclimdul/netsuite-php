@@ -50,7 +50,10 @@ class PaycheckJournalEarning {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "id" => "integer",
         "payrollItem" => "RecordRef",
         "hours" => "float",

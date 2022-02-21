@@ -22,7 +22,10 @@ class SearchColumnSelectCustomField extends SearchColumnCustomField {
      * @var \NetSuite\Classes\ListOrRecordRef
      */
     public $searchValue;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchValue" => "ListOrRecordRef",
     );
 }

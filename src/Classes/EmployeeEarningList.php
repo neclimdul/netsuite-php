@@ -26,7 +26,10 @@ class EmployeeEarningList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "employeeEarning" => "EmployeeEarning[]",
         "replaceAll" => "boolean",
     );

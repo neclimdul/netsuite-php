@@ -26,7 +26,10 @@ class ProjectTaskAssigneeList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "projectTaskAssignee" => "ProjectTaskAssignee[]",
         "replaceAll" => "boolean",
     );

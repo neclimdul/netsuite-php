@@ -26,7 +26,10 @@ class GiftCertRedemptionList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "giftCertRedemption" => "GiftCertRedemption[]",
         "replaceAll" => "boolean",
     );

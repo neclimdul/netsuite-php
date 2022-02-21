@@ -22,7 +22,10 @@ class SearchRowList {
      * @var \NetSuite\Classes\SearchRow[]
      */
     public $searchRow;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchRow" => "SearchRow[]",
     );
 }

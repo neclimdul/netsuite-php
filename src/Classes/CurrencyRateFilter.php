@@ -30,7 +30,10 @@ class CurrencyRateFilter {
      * @var string
      */
     public $effectiveDate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "baseCurrency" => "RecordRef",
         "fromCurrency" => "RecordRef",
         "effectiveDate" => "dateTime",

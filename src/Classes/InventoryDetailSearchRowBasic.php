@@ -42,7 +42,10 @@ class InventoryDetailSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnSelectField[]
      */
     public $status;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "binNumber" => "SearchColumnSelectField[]",
         "externalId" => "SearchColumnSelectField[]",
         "internalId" => "SearchColumnSelectField[]",

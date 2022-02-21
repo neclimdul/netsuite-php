@@ -26,7 +26,10 @@ class DeletedRecord {
      * @var \NetSuite\Classes\BaseRef
      */
     public $record;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "deletedDate" => "dateTime",
         "record" => "BaseRef",
     );

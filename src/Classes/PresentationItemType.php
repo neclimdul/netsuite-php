@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class PresentationItemType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _fileCabinetItem = "_fileCabinetItem";
     const _informationItem = "_informationItem";

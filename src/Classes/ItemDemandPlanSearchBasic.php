@@ -94,7 +94,10 @@ class ItemDemandPlanSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "alternateSourceItem" => "SearchMultiSelectField",
         "analysisDuration" => "SearchLongField",
         "demandDate" => "SearchDateField",

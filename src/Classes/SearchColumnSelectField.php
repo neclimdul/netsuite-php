@@ -22,7 +22,10 @@ class SearchColumnSelectField extends SearchColumnField {
      * @var \NetSuite\Classes\RecordRef
      */
     public $searchValue;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchValue" => "RecordRef",
     );
 }

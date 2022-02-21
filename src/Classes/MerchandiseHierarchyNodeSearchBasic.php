@@ -54,7 +54,10 @@ class MerchandiseHierarchyNodeSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $parentNode;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "description" => "SearchStringField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",

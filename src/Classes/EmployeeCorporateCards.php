@@ -30,7 +30,10 @@ class EmployeeCorporateCards {
      * @var \NetSuite\Classes\RecordRef
      */
     public $corporateCardProfile;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "embossedName" => "string",
         "expiration" => "dateTime",
         "corporateCardProfile" => "RecordRef",

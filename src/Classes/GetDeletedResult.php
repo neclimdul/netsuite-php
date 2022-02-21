@@ -42,7 +42,10 @@ class GetDeletedResult {
      * @var \NetSuite\Classes\DeletedRecordList
      */
     public $deletedRecordList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "totalRecords" => "integer",
         "pageSize" => "integer",

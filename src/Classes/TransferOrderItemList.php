@@ -26,7 +26,10 @@ class TransferOrderItemList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "item" => "TransferOrderItem[]",
         "replaceAll" => "boolean",
     );

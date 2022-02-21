@@ -30,7 +30,10 @@ class BillingRates {
      * @var \NetSuite\Classes\RateList
      */
     public $rateList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "currency" => "RecordRef",
         "billingClass" => "RecordRef",
         "rateList" => "RateList",

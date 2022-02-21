@@ -54,7 +54,10 @@ class HcmJobSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "description" => "SearchStringField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",

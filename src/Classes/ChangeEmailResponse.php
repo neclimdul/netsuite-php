@@ -22,7 +22,10 @@ class ChangeEmailResponse {
      * @var \NetSuite\Classes\SessionResponse
      */
     public $sessionResponse;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "sessionResponse" => "SessionResponse",
     );
 }

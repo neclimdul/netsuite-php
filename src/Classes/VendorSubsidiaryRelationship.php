@@ -58,7 +58,10 @@ class VendorSubsidiaryRelationship extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "baseCurrency" => "RecordRef",
         "creditLimit" => "float",
         "entity" => "RecordRef",

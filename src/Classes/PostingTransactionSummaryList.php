@@ -22,7 +22,10 @@ class PostingTransactionSummaryList {
      * @var \NetSuite\Classes\PostingTransactionSummary[]
      */
     public $postingTransactionSummary;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "postingTransactionSummary" => "PostingTransactionSummary[]",
     );
 }

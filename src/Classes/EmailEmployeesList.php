@@ -22,7 +22,10 @@ class EmailEmployeesList {
      * @var \NetSuite\Classes\RecordRef[]
      */
     public $emailEmployees;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "emailEmployees" => "RecordRef[]",
     );
 }

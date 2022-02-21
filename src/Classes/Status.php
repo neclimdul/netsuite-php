@@ -26,7 +26,10 @@ class Status {
      * @var boolean
      */
     public $isSuccess;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "statusDetail" => "StatusDetail[]",
         "isSuccess" => "boolean",
     );

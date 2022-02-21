@@ -30,7 +30,10 @@ class CustomRecordTypeOnlineForms {
      * @var string
      */
     public $templateName;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "onlineFormName" => "string",
         "isOnline" => "string",
         "templateName" => "string",

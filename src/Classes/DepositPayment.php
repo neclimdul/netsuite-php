@@ -70,7 +70,10 @@ class DepositPayment {
      * @var integer
      */
     public $lineId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "deposit" => "boolean",
         "id" => "integer",
         "docDate" => "dateTime",

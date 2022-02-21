@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class Language {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _afrikaans = "_afrikaans";
     const _albanian = "_albanian";

@@ -26,7 +26,10 @@ class VendorPricingSchedule {
      * @var float
      */
     public $scheduleDiscount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "scheduleName" => "string",
         "scheduleDiscount" => "float",
     );

@@ -98,7 +98,10 @@ class InboundShipmentItems {
      * @var \NetSuite\Classes\InventoryDetail
      */
     public $inventoryDetail;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "id" => "integer",
         "purchaseOrder" => "RecordRef",
         "shipmentItem" => "RecordRef",

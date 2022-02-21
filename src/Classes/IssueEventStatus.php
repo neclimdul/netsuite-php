@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class IssueEventStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _closed = "_closed";
     const _onHold = "_onHold";

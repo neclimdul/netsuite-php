@@ -26,7 +26,10 @@ class AccountingPeriodFiscalCalendars {
      * @var \NetSuite\Classes\RecordRef
      */
     public $parent;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "fiscalCalendar" => "RecordRef",
         "parent" => "RecordRef",
     );

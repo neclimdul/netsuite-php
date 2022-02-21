@@ -42,7 +42,10 @@ class PriceLevelSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $name;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "discountPct" => "SearchColumnDoubleField[]",
         "externalId" => "SearchColumnSelectField[]",
         "internalId" => "SearchColumnSelectField[]",

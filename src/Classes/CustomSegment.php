@@ -74,7 +74,10 @@ class CustomSegment extends Record {
      * @var string
      */
     public $internalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "label" => "string",
         "scriptId" => "string",
         "recordScriptId" => "string",

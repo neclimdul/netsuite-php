@@ -30,7 +30,10 @@ class BudgetExchangeRateFilter {
      * @var \NetSuite\Classes\RecordRef
      */
     public $toSubsidiary;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "period" => "RecordRef",
         "fromSubsidiary" => "RecordRef",
         "toSubsidiary" => "RecordRef",

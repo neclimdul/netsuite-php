@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ChargeStage {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _hold = "_hold";
     const _nonBillable = "_nonBillable";

@@ -46,7 +46,10 @@ class ManufacturingOperationTaskPredecessor {
      * @var string
      */
     public $lagUnits;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "task" => "RecordRef",
         "type" => "ManufacturingOperationTaskPredecessorPredecessorType",
         "startDate" => "dateTime",

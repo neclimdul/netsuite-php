@@ -134,7 +134,10 @@ class AdvInterCompanyJournalEntryLine {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "lineSubsidiary" => "RecordRef",
         "account" => "RecordRef",
         "line" => "integer",

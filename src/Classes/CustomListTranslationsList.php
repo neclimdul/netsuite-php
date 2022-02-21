@@ -26,7 +26,10 @@ class CustomListTranslationsList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "translations" => "CustomListTranslations[]",
         "replaceAll" => "boolean",
     );

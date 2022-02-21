@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CostCategoryItemCostType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _laborRun = "_laborRun";
     const _laborRunOverhead = "_laborRunOverhead";

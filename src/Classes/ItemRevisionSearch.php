@@ -30,7 +30,10 @@ class ItemRevisionSearch extends SearchRecord {
      * @var \NetSuite\Classes\EmployeeSearchBasic
      */
     public $userJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "ItemRevisionSearchBasic",
         "itemJoin" => "ItemSearchBasic",
         "userJoin" => "EmployeeSearchBasic",

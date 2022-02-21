@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class TransactionBillVarianceStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _journalNotPosted = "_journalNotPosted";
     const _journalPosted = "_journalPosted";

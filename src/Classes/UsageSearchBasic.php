@@ -70,7 +70,10 @@ class UsageSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $subscriptionPlan;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "customer" => "SearchMultiSelectField",
         "date" => "SearchDateField",
         "externalId" => "SearchMultiSelectField",

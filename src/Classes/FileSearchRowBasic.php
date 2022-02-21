@@ -82,7 +82,10 @@ class FileSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $url;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "availableWithoutLogin" => "SearchColumnBooleanField[]",
         "created" => "SearchColumnDateField[]",
         "dateViewed" => "SearchColumnDateField[]",

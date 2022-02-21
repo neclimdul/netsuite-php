@@ -26,7 +26,10 @@ class CustomRecordTypeChildren {
      * @var \NetSuite\Classes\RecordRef
      */
     public $childTab;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "childDescr" => "string",
         "childTab" => "RecordRef",
     );

@@ -30,7 +30,10 @@ class JobResources {
      * @var \NetSuite\Classes\RecordRef
      */
     public $role;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "jobResource" => "RecordRef",
         "email" => "string",
         "role" => "RecordRef",

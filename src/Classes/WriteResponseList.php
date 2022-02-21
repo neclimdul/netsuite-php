@@ -26,7 +26,10 @@ class WriteResponseList {
      * @var \NetSuite\Classes\WriteResponse[]
      */
     public $writeResponse;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "writeResponse" => "WriteResponse[]",
     );

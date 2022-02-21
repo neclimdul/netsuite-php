@@ -70,7 +70,10 @@ class PhoneCallSearch extends SearchRecord {
      * @var \NetSuite\Classes\CustomSearchJoin[]
      */
     public $customSearchJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "PhoneCallSearchBasic",
         "caseJoin" => "SupportCaseSearchBasic",
         "companyCustomerJoin" => "CustomerSearchBasic",

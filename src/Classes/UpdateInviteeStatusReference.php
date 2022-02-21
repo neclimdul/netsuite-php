@@ -26,7 +26,10 @@ class UpdateInviteeStatusReference {
      * @var \NetSuite\Classes\CalendarEventAttendeeResponse
      */
     public $responseCode;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "eventId" => "RecordRef",
         "responseCode" => "CalendarEventAttendeeResponse",
     );

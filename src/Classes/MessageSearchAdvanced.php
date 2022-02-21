@@ -34,7 +34,10 @@ class MessageSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "MessageSearch",
         "columns" => "MessageSearchRow",
         "savedSearchId" => "string",

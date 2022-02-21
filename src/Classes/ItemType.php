@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _assembly = "_assembly";
     const _description = "_description";

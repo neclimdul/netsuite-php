@@ -30,7 +30,10 @@ class GetAccountGovernanceInfoResult {
      * @var integer
      */
     public $unallocatedConcurrencyLimit;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "accountConcurrencyLimit" => "integer",
         "unallocatedConcurrencyLimit" => "integer",

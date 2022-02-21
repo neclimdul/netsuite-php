@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class StatusDetailCodeType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const ABORT_SEARCH_EXCEEDED_MAX_TIME = "ABORT_SEARCH_EXCEEDED_MAX_TIME";
     const ABORT_UPLOAD_VIRUS_DETECTED = "ABORT_UPLOAD_VIRUS_DETECTED";

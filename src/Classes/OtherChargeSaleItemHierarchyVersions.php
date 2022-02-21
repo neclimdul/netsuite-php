@@ -38,7 +38,10 @@ class OtherChargeSaleItemHierarchyVersions {
      * @var \NetSuite\Classes\RecordRef
      */
     public $hierarchyNode;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "isIncluded" => "boolean",
         "hierarchyVersion" => "RecordRef",
         "startDate" => "dateTime",

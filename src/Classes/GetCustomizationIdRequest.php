@@ -26,7 +26,10 @@ class GetCustomizationIdRequest {
      * @var boolean
      */
     public $includeInactives;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "customizationType" => "CustomizationType",
         "includeInactives" => "boolean",
     );

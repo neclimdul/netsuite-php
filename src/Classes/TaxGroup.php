@@ -102,7 +102,10 @@ class TaxGroup extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "itemId" => "string",
         "description" => "string",
         "state" => "string",

@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class EmployeeUseTimeData {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _wage = "_wage";
     const _salary = "_salary";

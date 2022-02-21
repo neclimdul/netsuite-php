@@ -62,7 +62,10 @@ class NexusSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchBooleanField
      */
     public $taxDateFromFulfillment;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "country" => "SearchEnumMultiSelectField",
         "description" => "SearchStringField",
         "externalId" => "SearchMultiSelectField",

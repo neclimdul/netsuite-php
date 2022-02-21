@@ -174,7 +174,10 @@ class Budget extends Record {
      * @var string
      */
     public $internalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "year" => "RecordRef",
         "customer" => "RecordRef",
         "item" => "RecordRef",

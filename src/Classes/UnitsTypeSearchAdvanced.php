@@ -34,7 +34,10 @@ class UnitsTypeSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "UnitsTypeSearch",
         "columns" => "UnitsTypeSearchRow",
         "savedSearchId" => "string",

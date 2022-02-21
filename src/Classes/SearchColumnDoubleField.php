@@ -22,7 +22,10 @@ class SearchColumnDoubleField extends SearchColumnField {
      * @var float
      */
     public $searchValue;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchValue" => "float",
     );
 }

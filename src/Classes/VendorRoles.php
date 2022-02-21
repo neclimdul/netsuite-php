@@ -22,7 +22,10 @@ class VendorRoles {
      * @var \NetSuite\Classes\RecordRef
      */
     public $selectedRole;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "selectedRole" => "RecordRef",
     );
 }

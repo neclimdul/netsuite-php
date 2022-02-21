@@ -46,7 +46,10 @@ class InboundShipmentLandedCost {
      * @var \NetSuite\Classes\RecordRefList
      */
     public $landedCostShipmentItemsList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "landedCostCostCategory" => "RecordRef",
         "landedCostAmount" => "float",
         "landedCostCurrency" => "RecordRef",

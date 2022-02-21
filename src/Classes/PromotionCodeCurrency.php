@@ -26,7 +26,10 @@ class PromotionCodeCurrency {
      * @var float
      */
     public $minimumOrderAmount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "currency" => "RecordRef",
         "minimumOrderAmount" => "float",
     );

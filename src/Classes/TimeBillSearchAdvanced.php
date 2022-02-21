@@ -34,7 +34,10 @@ class TimeBillSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "TimeBillSearch",
         "columns" => "TimeBillSearchRow",
         "savedSearchId" => "string",

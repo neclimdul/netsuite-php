@@ -206,7 +206,10 @@ class ProjectTaskSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "actualWork" => "SearchColumnDoubleField[]",
         "company" => "SearchColumnSelectField[]",
         "constraintType" => "SearchColumnEnumSelectField[]",

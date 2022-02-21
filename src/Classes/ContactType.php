@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ContactType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _customer = "_customer";
     const _employee = "_employee";

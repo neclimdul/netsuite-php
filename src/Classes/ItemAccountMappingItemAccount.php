@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemAccountMappingItemAccount {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _asset = "_asset";
     const _costOfGoods = "_costOfGoods";

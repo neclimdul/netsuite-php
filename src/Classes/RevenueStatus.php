@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class RevenueStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _pending = "_pending";
     const _inProgress = "_inProgress";

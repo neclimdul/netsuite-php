@@ -94,7 +94,10 @@ class SolutionSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "abstract" => "SearchStringField",
         "assigned" => "SearchMultiSelectField",
         "caseCount" => "SearchLongField",

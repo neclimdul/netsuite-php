@@ -110,7 +110,10 @@ class BillingAccountSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "billingSchedule" => "SearchColumnSelectField[]",
         "cashSaleForm" => "SearchColumnSelectField[]",
         "class" => "SearchColumnSelectField[]",

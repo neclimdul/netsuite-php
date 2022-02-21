@@ -22,7 +22,10 @@ class ApplicationInfo {
      * @var string
      */
     public $applicationId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "applicationId" => "string",
     );
 }

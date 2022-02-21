@@ -22,7 +22,10 @@ class SearchColumnBooleanCustomField extends SearchColumnCustomField {
      * @var boolean
      */
     public $searchValue;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchValue" => "boolean",
     );
 }

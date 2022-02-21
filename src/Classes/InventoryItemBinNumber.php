@@ -38,7 +38,10 @@ class InventoryItemBinNumber {
      * @var boolean
      */
     public $preferredBin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "binNumber" => "RecordRef",
         "onHand" => "string",
         "onHandAvail" => "string",

@@ -26,7 +26,10 @@ class TransactionBodyCustomFieldFilterList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "filter" => "TransactionBodyCustomFieldFilter[]",
         "replaceAll" => "boolean",
     );

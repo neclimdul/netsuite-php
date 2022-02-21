@@ -26,7 +26,10 @@ class PaymentMethodVisuals {
      * @var string
      */
     public $location;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "flags" => "string",
         "location" => "string",
     );

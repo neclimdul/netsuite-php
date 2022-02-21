@@ -22,7 +22,10 @@ class PromotionCodeItems {
      * @var \NetSuite\Classes\RecordRef
      */
     public $item;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "item" => "RecordRef",
     );
 }

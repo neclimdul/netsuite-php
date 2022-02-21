@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CustomerNumberFormat {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _spaceAsDigitGroupSeparatorAndDecimalComma = "_spaceAsDigitGroupSeparatorAndDecimalComma";
     const _spaceAsDigitGroupSeparatorAndDecimalPoint = "_spaceAsDigitGroupSeparatorAndDecimalPoint";

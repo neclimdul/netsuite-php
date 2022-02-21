@@ -22,7 +22,10 @@ class CurrencyRateList {
      * @var \NetSuite\Classes\CurrencyRate[]
      */
     public $currencyRate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "currencyRate" => "CurrencyRate[]",
     );
 }

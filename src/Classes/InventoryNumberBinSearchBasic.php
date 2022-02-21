@@ -38,7 +38,10 @@ class InventoryNumberBinSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchDoubleField
      */
     public $quantityOnHand;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "binNumber" => "SearchMultiSelectField",
         "inventoryNumber" => "SearchStringField",
         "location" => "SearchMultiSelectField",

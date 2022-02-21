@@ -22,7 +22,10 @@ class DetachBasicReference extends DetachReference {
      * @var \NetSuite\Classes\BaseRef
      */
     public $detachedRecord;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "detachedRecord" => "BaseRef",
     );
 }

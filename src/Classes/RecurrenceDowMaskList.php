@@ -22,7 +22,10 @@ class RecurrenceDowMaskList {
      * @var \NetSuite\Classes\RecurrenceDow
      */
     public $recurrenceDowMask;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "recurrenceDowMask" => "RecurrenceDow",
     );
 }

@@ -30,7 +30,10 @@ class PaycheckSearchRow extends SearchRow {
      * @var \NetSuite\Classes\PayrollItemSearchRowBasic
      */
     public $payrollItemJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "PaycheckSearchRowBasic",
         "employeeJoin" => "EmployeeSearchRowBasic",
         "payrollItemJoin" => "PayrollItemSearchRowBasic",

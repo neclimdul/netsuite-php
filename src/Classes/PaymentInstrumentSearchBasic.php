@@ -42,7 +42,10 @@ class PaymentInstrumentSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchBooleanField
      */
     public $preserveOnFile;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "customer" => "SearchMultiSelectField",
         "internalId" => "SearchMultiSelectField",
         "internalIdNumber" => "SearchLongField",

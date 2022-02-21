@@ -98,7 +98,10 @@ class TermSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchBooleanField
      */
     public $splitEvenly;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "dateDriven" => "SearchBooleanField",
         "dayDiscountExpires" => "SearchLongField",
         "dayOfMonthNetDue" => "SearchLongField",

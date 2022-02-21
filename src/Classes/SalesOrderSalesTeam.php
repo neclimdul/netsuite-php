@@ -34,7 +34,10 @@ class SalesOrderSalesTeam {
      * @var float
      */
     public $contribution;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "employee" => "RecordRef",
         "salesRole" => "RecordRef",
         "isPrimary" => "boolean",

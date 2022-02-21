@@ -26,7 +26,10 @@ class PaycheckPayPtoList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "paycheckPayPto" => "PaycheckPayPto[]",
         "replaceAll" => "boolean",
     );

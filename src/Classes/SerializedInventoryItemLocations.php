@@ -194,7 +194,10 @@ class SerializedInventoryItemLocations {
      * @var integer
      */
     public $rescheduleOutDays;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "location" => "string",
         "quantityOnHand" => "float",
         "onHandValueMli" => "float",

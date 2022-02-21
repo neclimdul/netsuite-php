@@ -22,7 +22,10 @@ class TermPercentages {
      * @var float
      */
     public $percentage;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "percentage" => "float",
     );
 }

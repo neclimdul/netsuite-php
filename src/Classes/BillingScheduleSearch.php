@@ -22,7 +22,10 @@ class BillingScheduleSearch extends SearchRecord {
      * @var \NetSuite\Classes\BillingScheduleSearchBasic
      */
     public $basic;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "BillingScheduleSearchBasic",
     );
 }

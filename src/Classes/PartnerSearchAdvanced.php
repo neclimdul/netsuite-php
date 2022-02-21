@@ -34,7 +34,10 @@ class PartnerSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "PartnerSearch",
         "columns" => "PartnerSearchRow",
         "savedSearchId" => "string",

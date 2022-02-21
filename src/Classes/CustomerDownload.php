@@ -34,7 +34,10 @@ class CustomerDownload {
      * @var string
      */
     public $expiration;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "file" => "RecordRef",
         "licenseCode" => "string",
         "remainingDownloads" => "integer",

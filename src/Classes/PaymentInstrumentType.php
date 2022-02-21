@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class PaymentInstrumentType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _paymentCard = "_paymentCard";
     const _generalToken = "_generalToken";

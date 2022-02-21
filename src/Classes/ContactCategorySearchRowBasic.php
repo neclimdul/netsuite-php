@@ -38,7 +38,10 @@ class ContactCategorySearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnBooleanField[]
      */
     public $private;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "externalId" => "SearchColumnSelectField[]",
         "internalId" => "SearchColumnSelectField[]",
         "isInactive" => "SearchColumnBooleanField[]",

@@ -22,7 +22,10 @@ class PartnerInfo {
      * @var string
      */
     public $partnerId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "partnerId" => "string",
     );
 }

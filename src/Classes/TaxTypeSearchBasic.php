@@ -78,7 +78,10 @@ class TaxTypeSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchBooleanField
      */
     public $taxInNetAmount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "country" => "SearchEnumMultiSelectField",
         "description" => "SearchStringField",
         "doesNotAddToTotal" => "SearchBooleanField",

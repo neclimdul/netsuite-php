@@ -30,7 +30,10 @@ class GetSavedSearchResult {
      * @var \NetSuite\Classes\RecordRefList
      */
     public $recordRefList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "totalRecords" => "integer",
         "recordRefList" => "RecordRefList",

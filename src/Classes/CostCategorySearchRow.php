@@ -30,7 +30,10 @@ class CostCategorySearchRow extends SearchRow {
      * @var \NetSuite\Classes\TransactionSearchRowBasic
      */
     public $transactionJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "CostCategorySearchRowBasic",
         "accountJoin" => "AccountSearchRowBasic",
         "transactionJoin" => "TransactionSearchRowBasic",

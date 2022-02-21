@@ -58,7 +58,10 @@ class ConsolidatedExchangeRateSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $toSubsidiary;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accountingBook" => "SearchMultiSelectField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",

@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemWeightUnit {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _g = "_g";
     const _kg = "_kg";

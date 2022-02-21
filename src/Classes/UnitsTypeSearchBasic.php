@@ -66,7 +66,10 @@ class UnitsTypeSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchStringField
      */
     public $unitName;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "abbreviation" => "SearchStringField",
         "baseUnit" => "SearchBooleanField",
         "conversionRate" => "SearchStringField",

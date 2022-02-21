@@ -38,7 +38,10 @@ class JobPlStatement {
      * @var float
      */
     public $margin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "costCategory" => "string",
         "revenue" => "float",
         "cost" => "float",

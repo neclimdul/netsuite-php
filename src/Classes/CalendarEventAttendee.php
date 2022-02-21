@@ -34,7 +34,10 @@ class CalendarEventAttendee {
      * @var \NetSuite\Classes\CalendarEventAttendeeAttendance
      */
     public $attendance;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "sendEmail" => "boolean",
         "attendee" => "RecordRef",
         "response" => "CalendarEventAttendeeResponse",

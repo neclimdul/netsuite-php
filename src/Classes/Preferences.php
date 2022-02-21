@@ -38,7 +38,10 @@ class Preferences {
      * @var boolean
      */
     public $runServerSuiteScriptAndTriggerWorkflows;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "warningAsError" => "boolean",
         "disableMandatoryCustomFieldValidation" => "boolean",
         "disableSystemNotesForCustomFields" => "boolean",

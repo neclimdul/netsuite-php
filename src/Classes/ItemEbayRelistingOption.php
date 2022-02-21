@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemEbayRelistingOption {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _doNotRelist = "_doNotRelist";
     const _relistWhenItemExpires = "_relistWhenItemExpires";

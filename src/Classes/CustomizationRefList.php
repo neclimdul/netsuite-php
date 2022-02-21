@@ -22,7 +22,10 @@ class CustomizationRefList {
      * @var \NetSuite\Classes\CustomizationRef[]
      */
     public $customizationRef;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "customizationRef" => "CustomizationRef[]",
     );
 }

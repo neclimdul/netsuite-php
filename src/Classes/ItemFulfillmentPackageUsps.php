@@ -66,7 +66,10 @@ class ItemFulfillmentPackageUsps {
      * @var \NetSuite\Classes\ItemFulfillmentPackageUspsDeliveryConfUsps
      */
     public $deliveryConfUsps;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "packageWeightUsps" => "float",
         "packageDescrUsps" => "string",
         "packageTrackingNumberUsps" => "string",

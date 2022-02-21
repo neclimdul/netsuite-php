@@ -26,7 +26,10 @@ class GetSelectValueFilter {
      * @var \NetSuite\Classes\GetSelectValueFilterOperator::*
      */
     public $operator;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "filterValue" => "string",
         "operator" => "GetSelectValueFilterOperator",
     );

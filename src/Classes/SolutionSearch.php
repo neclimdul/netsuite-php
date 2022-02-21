@@ -46,7 +46,10 @@ class SolutionSearch extends SearchRecord {
      * @var \NetSuite\Classes\CustomSearchJoin[]
      */
     public $customSearchJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "SolutionSearchBasic",
         "caseJoin" => "SupportCaseSearchBasic",
         "relatedSolutionJoin" => "SolutionSearchBasic",

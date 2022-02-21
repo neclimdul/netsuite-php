@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class RevRecScheduleRecurrenceType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _custom = "_custom";
     const _straightLineByEvenPeriods = "_straightLineByEvenPeriods";

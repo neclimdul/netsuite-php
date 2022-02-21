@@ -138,7 +138,10 @@ class AccountingTransactionSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchDoubleField
      */
     public $vsoeAllocation;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "account" => "SearchMultiSelectField",
         "accountingBook" => "SearchMultiSelectField",
         "accountType" => "SearchMultiSelectField",

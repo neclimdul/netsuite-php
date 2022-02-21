@@ -34,7 +34,10 @@ class SolutionSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "SolutionSearch",
         "columns" => "SolutionSearchRow",
         "savedSearchId" => "string",

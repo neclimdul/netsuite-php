@@ -42,7 +42,10 @@ class OtherNameCategorySearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchStringField
      */
     public $name;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",
         "internalId" => "SearchMultiSelectField",

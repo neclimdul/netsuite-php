@@ -34,7 +34,10 @@ class FileSiteCategory {
      * @var \NetSuite\Classes\RecordRef
      */
     public $website;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "isDefault" => "boolean",
         "category" => "RecordRef",
         "categoryDescription" => "string",

@@ -50,7 +50,10 @@ class PriceLevelSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchStringField
      */
     public $name;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "discountPct" => "SearchDoubleField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",

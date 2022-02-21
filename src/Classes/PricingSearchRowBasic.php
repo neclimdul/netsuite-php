@@ -58,7 +58,10 @@ class PricingSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnDoubleField[]
      */
     public $unitPrice;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "currency" => "SearchColumnSelectField[]",
         "customer" => "SearchColumnSelectField[]",
         "internalId" => "SearchColumnSelectField[]",

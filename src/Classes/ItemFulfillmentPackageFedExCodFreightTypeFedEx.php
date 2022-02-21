@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemFulfillmentPackageFedExCodFreightTypeFedEx {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _cODCharge = "_cODCharge";
     const _noneSelected = "_noneSelected";

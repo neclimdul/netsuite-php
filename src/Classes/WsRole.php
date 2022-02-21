@@ -34,7 +34,10 @@ class WsRole {
      * @var boolean
      */
     public $isLoggedInRole;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "role" => "RecordRef",
         "isDefault" => "boolean",
         "isInactive" => "boolean",

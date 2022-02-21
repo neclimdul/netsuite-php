@@ -22,7 +22,10 @@ class ItemAvailabilityList {
      * @var \NetSuite\Classes\ItemAvailability[]
      */
     public $itemAvailability;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "itemAvailability" => "ItemAvailability[]",
     );
 }

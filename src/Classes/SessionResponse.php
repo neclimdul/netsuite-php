@@ -30,7 +30,10 @@ class SessionResponse {
      * @var \NetSuite\Classes\WsRoleList
      */
     public $wsRoleList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "userId" => "RecordRef",
         "wsRoleList" => "WsRoleList",

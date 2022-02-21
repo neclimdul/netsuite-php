@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class TransactionApprovalStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _approved = "_approved";
     const _open = "_open";

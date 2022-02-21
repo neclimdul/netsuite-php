@@ -186,7 +186,10 @@ class InboundShipmentSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "actualDeliveryDate" => "SearchDateField",
         "actualShippingDate" => "SearchDateField",
         "billOfLading" => "SearchStringField",

@@ -26,7 +26,10 @@ class SiteCategoryTranslationList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "translation" => "SiteCategoryTranslation[]",
         "replaceAll" => "boolean",
     );

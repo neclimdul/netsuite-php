@@ -46,7 +46,10 @@ class PriceLevel extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "name" => "string",
         "discountpct" => "float",
         "updateExistingPrices" => "boolean",

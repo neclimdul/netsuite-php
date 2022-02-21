@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class PhoneCallReminderMinutes {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _0minutes = "_0minutes";
     const _10minutes = "_10minutes";

@@ -38,7 +38,10 @@ class Installment {
      * @var string
      */
     public $status;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "amount" => "float",
         "dueDate" => "dateTime",
         "amountDue" => "float",

@@ -34,7 +34,10 @@ class Partners {
      * @var float
      */
     public $contribution;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "partner" => "RecordRef",
         "partnerRole" => "RecordRef",
         "isPrimary" => "boolean",

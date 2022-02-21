@@ -34,7 +34,10 @@ class InventoryNumberSearch extends SearchRecord {
      * @var \NetSuite\Classes\CustomSearchJoin[]
      */
     public $customSearchJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "InventoryNumberSearchBasic",
         "itemJoin" => "ItemSearchBasic",
         "userJoin" => "EmployeeSearchBasic",

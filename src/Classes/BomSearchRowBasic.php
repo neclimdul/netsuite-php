@@ -86,7 +86,10 @@ class BomSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnBooleanField[]
      */
     public $usedOnAssembly;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "availableForAllAssemblies" => "SearchColumnBooleanField[]",
         "availableForAllLocations" => "SearchColumnBooleanField[]",
         "createdDate" => "SearchColumnDateField[]",

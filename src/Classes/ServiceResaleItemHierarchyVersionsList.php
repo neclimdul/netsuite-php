@@ -26,7 +26,10 @@ class ServiceResaleItemHierarchyVersionsList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "serviceResaleItemHierarchyVersions" => "ServiceResaleItemHierarchyVersions[]",
         "replaceAll" => "boolean",
     );

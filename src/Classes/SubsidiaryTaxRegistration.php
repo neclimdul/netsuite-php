@@ -50,7 +50,10 @@ class SubsidiaryTaxRegistration {
      * @var string
      */
     public $validUntil;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "id" => "integer",
         "nexusCountry" => "Country",
         "nexus" => "RecordRef",

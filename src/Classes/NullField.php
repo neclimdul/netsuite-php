@@ -22,7 +22,10 @@ class NullField {
      * @var string[]
      */
     public $name;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "name" => "string[]",
     );
 }

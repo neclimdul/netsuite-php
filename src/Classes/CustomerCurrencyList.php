@@ -26,7 +26,10 @@ class CustomerCurrencyList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "currency" => "CustomerCurrency[]",
         "replaceAll" => "boolean",
     );

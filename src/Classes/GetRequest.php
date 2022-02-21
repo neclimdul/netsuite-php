@@ -22,7 +22,10 @@ class GetRequest {
      * @var \NetSuite\Classes\BaseRef
      */
     public $baseRef;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "baseRef" => "BaseRef",
     );
 }

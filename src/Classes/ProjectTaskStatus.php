@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ProjectTaskStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _completed = "_completed";
     const _inProgress = "_inProgress";

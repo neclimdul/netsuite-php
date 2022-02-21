@@ -34,7 +34,10 @@ class InitializeAuxRef extends BaseRef {
      * @var string
      */
     public $scriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "type" => "InitializeAuxRefType",
         "internalId" => "string",
         "externalId" => "string",

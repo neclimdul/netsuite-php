@@ -34,7 +34,10 @@ class JobStatusSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "JobStatusSearch",
         "columns" => "JobStatusSearchRow",
         "savedSearchId" => "string",

@@ -22,7 +22,10 @@ class GeneralTokenSupportedOperationsListList {
      * @var \NetSuite\Classes\PaymentInstrumentSupportedOperation[]
      */
     public $GeneralTokenSupportedOperationsList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "GeneralTokenSupportedOperationsList" => "PaymentInstrumentSupportedOperation[]",
     );
 }

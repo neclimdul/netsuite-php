@@ -26,7 +26,10 @@ class CalendarEventResourceList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "resource" => "CalendarEventResource[]",
         "replaceAll" => "boolean",
     );

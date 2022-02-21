@@ -26,7 +26,10 @@ class SubsidiaryNexusList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "nexus" => "SubsidiaryNexus[]",
         "replaceAll" => "boolean",
     );

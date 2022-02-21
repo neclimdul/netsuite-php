@@ -114,7 +114,10 @@ class ItemFulfillmentItem {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "jobName" => "string",
         "itemReceive" => "boolean",
         "itemName" => "string",

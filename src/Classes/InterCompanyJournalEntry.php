@@ -126,7 +126,10 @@ class InterCompanyJournalEntry extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "postingPeriod" => "RecordRef",
         "customForm" => "RecordRef",
         "tranDate" => "dateTime",

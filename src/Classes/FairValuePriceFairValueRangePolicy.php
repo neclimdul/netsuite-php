@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class FairValuePriceFairValueRangePolicy {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _boundary = "_boundary";
     const _fairValue = "_fairValue";

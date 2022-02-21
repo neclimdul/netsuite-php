@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class EmployeeBonusTargetType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _amount = "_amount";
     const _percent = "_percent";

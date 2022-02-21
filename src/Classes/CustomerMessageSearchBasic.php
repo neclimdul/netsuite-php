@@ -50,7 +50,10 @@ class CustomerMessageSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchBooleanField
      */
     public $preferred;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "description" => "SearchStringField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",

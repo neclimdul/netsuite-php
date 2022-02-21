@@ -90,7 +90,10 @@ class OpportunitySearchRow extends SearchRow {
      * @var \NetSuite\Classes\CustomSearchRowBasic[]
      */
     public $customSearchJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "OpportunitySearchRowBasic",
         "actualJoin" => "TransactionSearchRowBasic",
         "callJoin" => "PhoneCallSearchRowBasic",

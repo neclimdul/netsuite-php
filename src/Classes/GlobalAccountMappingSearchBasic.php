@@ -78,7 +78,10 @@ class GlobalAccountMappingSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accountingBook" => "SearchMultiSelectField",
         "class" => "SearchMultiSelectField",
         "customDimension" => "SearchMultiSelectCustomField",

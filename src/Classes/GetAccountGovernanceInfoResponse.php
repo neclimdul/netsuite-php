@@ -22,7 +22,10 @@ class GetAccountGovernanceInfoResponse {
      * @var \NetSuite\Classes\GetAccountGovernanceInfoResult
      */
     public $getAccountGovernanceInfoResult;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "getAccountGovernanceInfoResult" => "GetAccountGovernanceInfoResult",
     );
 }

@@ -46,7 +46,10 @@ class ContactCategorySearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchBooleanField
      */
     public $private;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",
         "internalId" => "SearchMultiSelectField",

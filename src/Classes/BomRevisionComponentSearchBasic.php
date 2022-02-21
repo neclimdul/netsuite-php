@@ -74,7 +74,10 @@ class BomRevisionComponentSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchDoubleField
      */
     public $weight;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "bomQuantity" => "SearchDoubleField",
         "bomRevision" => "SearchMultiSelectField",
         "componentYield" => "SearchDoubleField",

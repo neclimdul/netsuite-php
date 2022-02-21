@@ -22,7 +22,10 @@ class AttachRequest {
      * @var \NetSuite\Classes\AttachReference
      */
     public $attachReference;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "attachReference" => "AttachReference",
     );
 }

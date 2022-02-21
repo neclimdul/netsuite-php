@@ -90,7 +90,10 @@ class ItemDemandPlanSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "alternateSourceItem" => "SearchColumnSelectField[]",
         "analysisDuration" => "SearchColumnLongField[]",
         "demandDate" => "SearchColumnDateField[]",

@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class EmployeeBonusTargetPayFrequency {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _annually = "_annually";
     const _monthly = "_monthly";

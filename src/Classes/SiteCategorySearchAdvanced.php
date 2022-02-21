@@ -34,7 +34,10 @@ class SiteCategorySearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "SiteCategorySearch",
         "columns" => "SiteCategorySearchRow",
         "savedSearchId" => "string",

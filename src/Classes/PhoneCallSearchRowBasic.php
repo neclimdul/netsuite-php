@@ -102,7 +102,10 @@ class PhoneCallSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accessLevel" => "SearchColumnStringField[]",
         "assigned" => "SearchColumnSelectField[]",
         "company" => "SearchColumnSelectField[]",

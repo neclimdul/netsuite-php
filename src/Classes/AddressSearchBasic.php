@@ -90,7 +90,10 @@ class AddressSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "address" => "SearchStringField",
         "address1" => "SearchStringField",
         "address2" => "SearchStringField",

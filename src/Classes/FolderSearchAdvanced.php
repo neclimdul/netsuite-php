@@ -34,7 +34,10 @@ class FolderSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "FolderSearch",
         "columns" => "FolderSearchRow",
         "savedSearchId" => "string",

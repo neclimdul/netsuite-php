@@ -26,7 +26,10 @@ class TopicSolutionList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "solution" => "TopicSolution[]",
         "replaceAll" => "boolean",
     );

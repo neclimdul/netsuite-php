@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemFulfillmentAncillaryEndorsementFedEx {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _addressCorrection = "_addressCorrection";
     const _carrierLeaveIfNoResponse = "_carrierLeaveIfNoResponse";

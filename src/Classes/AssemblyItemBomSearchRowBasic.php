@@ -34,7 +34,10 @@ class AssemblyItemBomSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnSelectField[]
      */
     public $locations;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "assembly" => "SearchColumnSelectField[]",
         "billOfMaterials" => "SearchColumnSelectField[]",
         "default" => "SearchColumnBooleanField[]",

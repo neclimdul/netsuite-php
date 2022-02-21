@@ -22,7 +22,10 @@ class GetCustomizationIdResponse {
      * @var \NetSuite\Classes\GetCustomizationIdResult
      */
     public $getCustomizationIdResult;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "getCustomizationIdResult" => "GetCustomizationIdResult",
     );
 }

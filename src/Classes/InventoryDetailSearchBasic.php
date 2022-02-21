@@ -50,7 +50,10 @@ class InventoryDetailSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $status;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "binNumber" => "SearchMultiSelectField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",

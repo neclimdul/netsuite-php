@@ -62,7 +62,10 @@ class ManufacturingRoutingRoutingStep {
      * @var string
      */
     public $lagUnits;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "operationSequence" => "integer",
         "operationName" => "string",
         "manufacturingWorkCenter" => "RecordRef",

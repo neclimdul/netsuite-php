@@ -22,7 +22,10 @@ class SearchColumnLongCustomField extends SearchColumnCustomField {
      * @var integer
      */
     public $searchValue;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchValue" => "integer",
     );
 }

@@ -22,7 +22,10 @@ class GetAllRecord {
      * @var \NetSuite\Classes\GetAllRecordType
      */
     public $recordType;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "recordType" => "GetAllRecordType",
     );
 }

@@ -26,7 +26,10 @@ class GetItemAvailabilityResult {
      * @var \NetSuite\Classes\ItemAvailabilityList
      */
     public $itemAvailabilityList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "itemAvailabilityList" => "ItemAvailabilityList",
     );

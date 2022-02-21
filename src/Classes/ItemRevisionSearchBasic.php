@@ -50,7 +50,10 @@ class ItemRevisionSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchDateField
      */
     public $obsoleteDate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "effectiveDate" => "SearchDateField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",

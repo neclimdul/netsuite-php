@@ -30,7 +30,10 @@ class CustomRecordTypeForms {
      * @var boolean
      */
     public $formPref;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "formEdit" => "string",
         "formName" => "string",
         "formPref" => "boolean",

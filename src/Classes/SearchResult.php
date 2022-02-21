@@ -50,7 +50,10 @@ class SearchResult {
      * @var \NetSuite\Classes\SearchRowList
      */
     public $searchRowList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "totalRecords" => "integer",
         "pageSize" => "integer",

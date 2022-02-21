@@ -26,7 +26,10 @@ class MerchandiseHierarchyNodeSearch extends SearchRecord {
      * @var \NetSuite\Classes\MerchandiseHierarchyNodeSearchBasic
      */
     public $parentNodeJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "MerchandiseHierarchyNodeSearchBasic",
         "parentNodeJoin" => "MerchandiseHierarchyNodeSearchBasic",
     );

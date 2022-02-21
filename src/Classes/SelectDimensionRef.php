@@ -22,7 +22,10 @@ class SelectDimensionRef extends DimensionRef {
      * @var \NetSuite\Classes\ListOrRecordRef
      */
     public $value;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "value" => "ListOrRecordRef",
     );
 }

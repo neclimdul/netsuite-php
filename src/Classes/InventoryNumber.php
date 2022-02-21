@@ -58,7 +58,10 @@ class InventoryNumber extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "inventoryNumber" => "string",
         "item" => "RecordRef",
         "status" => "string",

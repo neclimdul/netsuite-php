@@ -22,7 +22,10 @@ class SearchColumnCustomFieldList {
      * @var \NetSuite\Classes\SearchColumnCustomField[]
      */
     public $customField;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "customField" => "SearchColumnCustomField[]",
     );
 }

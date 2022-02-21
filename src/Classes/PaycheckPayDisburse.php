@@ -38,7 +38,10 @@ class PaycheckPayDisburse {
      * @var float
      */
     public $amount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "method" => "string",
         "bankName" => "string",
         "bankAccountDecrypt" => "string",

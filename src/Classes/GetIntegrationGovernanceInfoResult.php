@@ -30,7 +30,10 @@ class GetIntegrationGovernanceInfoResult {
      * @var \NetSuite\Classes\GetIntegrationGovernanceInfoLimitType
      */
     public $limitType;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "integrationConcurrencyLimit" => "integer",
         "limitType" => "GetIntegrationGovernanceInfoLimitType",

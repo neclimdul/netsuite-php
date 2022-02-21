@@ -26,7 +26,10 @@ class EmployeeRates {
      * @var float
      */
     public $rate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "entityCurrency" => "RecordRef",
         "rate" => "float",
     );

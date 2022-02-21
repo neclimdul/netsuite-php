@@ -74,7 +74,10 @@ class WorkOrderCompletionOperation {
      * @var float
      */
     public $laborRunTime;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "operationSequence" => "integer",
         "operationName" => "string",
         "workCenter" => "string",

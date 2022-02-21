@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ForecastType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _omitted = "_omitted";
     const _worstCase = "_worstCase";

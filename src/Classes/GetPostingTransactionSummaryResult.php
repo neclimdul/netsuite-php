@@ -46,7 +46,10 @@ class GetPostingTransactionSummaryResult {
      * @var \NetSuite\Classes\PostingTransactionSummaryList
      */
     public $postingTransactionSummaryList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "totalRecords" => "integer",
         "pageSize" => "integer",

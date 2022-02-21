@@ -42,7 +42,10 @@ class TokenPassport {
      * @var \NetSuite\Classes\TokenPassportSignature
      */
     public $signature;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "account" => "string",
         "consumerKey" => "string",
         "token" => "string",

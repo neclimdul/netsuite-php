@@ -146,7 +146,10 @@ class Account extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "acctType" => "AccountType",
         "unitsType" => "RecordRef",
         "unit" => "RecordRef",

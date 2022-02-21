@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CustomizationDisplayType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _disabled = "_disabled";
     const _hidden = "_hidden";

@@ -22,7 +22,10 @@ class RecordList {
      * @var \NetSuite\Classes\Record[]
      */
     public $record;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "record" => "Record[]",
     );
 }

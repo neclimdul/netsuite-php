@@ -162,7 +162,10 @@ class TimeBillSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "approvalStatus" => "SearchColumnSelectField[]",
         "break" => "SearchColumnStringField[]",
         "class" => "SearchColumnSelectField[]",

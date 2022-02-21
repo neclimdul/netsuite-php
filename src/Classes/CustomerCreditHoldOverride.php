@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CustomerCreditHoldOverride {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _auto = "_auto";
     const _on = "_on";

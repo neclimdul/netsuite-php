@@ -74,7 +74,10 @@ class CustomRecordSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "recType" => "RecordRef",
         "altName" => "SearchColumnStringField[]",
         "availableOffline" => "SearchColumnBooleanField[]",

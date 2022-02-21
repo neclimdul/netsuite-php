@@ -98,7 +98,10 @@ class FolderSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $subsidiary;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "class" => "SearchMultiSelectField",
         "department" => "SearchMultiSelectField",
         "description" => "SearchStringField",

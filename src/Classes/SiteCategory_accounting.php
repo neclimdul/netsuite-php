@@ -34,7 +34,10 @@ class SiteCategory_accounting {
      * @var string
      */
     public $categoryDescription;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "website" => "RecordRef",
         "category" => "RecordRef",
         "isDefault" => "boolean",

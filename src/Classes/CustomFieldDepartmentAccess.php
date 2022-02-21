@@ -30,7 +30,10 @@ class CustomFieldDepartmentAccess {
      * @var \NetSuite\Classes\CustomizationSearchLevel
      */
     public $searchLevel;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "dept" => "RecordRef",
         "accessLevel" => "CustomizationAccessLevel",
         "searchLevel" => "CustomizationSearchLevel",

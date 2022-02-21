@@ -98,7 +98,10 @@ class FairValuePrice extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "customForm" => "RecordRef",
         "item" => "RecordRef",
         "itemRevenueCategory" => "RecordRef",

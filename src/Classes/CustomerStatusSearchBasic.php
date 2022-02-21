@@ -54,7 +54,10 @@ class CustomerStatusSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchDoubleField
      */
     public $probability;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "description" => "SearchStringField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",

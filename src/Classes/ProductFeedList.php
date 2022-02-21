@@ -22,7 +22,10 @@ class ProductFeedList {
      * @var \NetSuite\Classes\ItemProductFeed[]
      */
     public $productFeed;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "productFeed" => "ItemProductFeed[]",
     );
 }

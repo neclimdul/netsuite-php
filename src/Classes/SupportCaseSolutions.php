@@ -30,7 +30,10 @@ class SupportCaseSolutions {
      * @var string
      */
     public $dateApplied;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "solution" => "RecordRef",
         "message" => "string",
         "dateApplied" => "dateTime",

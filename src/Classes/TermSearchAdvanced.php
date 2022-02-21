@@ -34,7 +34,10 @@ class TermSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "TermSearch",
         "columns" => "TermSearchRow",
         "savedSearchId" => "string",

@@ -62,7 +62,10 @@ class PaycheckSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $payrollItemType;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "account" => "SearchMultiSelectField",
         "batchNumber" => "SearchLongField",
         "checkDate" => "SearchDateField",

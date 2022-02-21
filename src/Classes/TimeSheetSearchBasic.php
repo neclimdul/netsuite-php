@@ -58,7 +58,10 @@ class TimeSheetSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "approvalStatus" => "SearchMultiSelectField",
         "employee" => "SearchMultiSelectField",
         "externalId" => "SearchMultiSelectField",

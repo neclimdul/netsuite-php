@@ -54,7 +54,10 @@ class NexusSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnBooleanField[]
      */
     public $taxDateFromFulfillment;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "country" => "SearchColumnEnumSelectField[]",
         "description" => "SearchColumnStringField[]",
         "externalId" => "SearchColumnSelectField[]",

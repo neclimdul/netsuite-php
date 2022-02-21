@@ -198,7 +198,10 @@ class LocationSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "address1" => "SearchColumnStringField[]",
         "address2" => "SearchColumnStringField[]",
         "address3" => "SearchColumnStringField[]",

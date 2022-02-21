@@ -74,7 +74,10 @@ class VendorPaymentApply {
      * @var float
      */
     public $amount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "apply" => "boolean",
         "doc" => "integer",
         "line" => "integer",

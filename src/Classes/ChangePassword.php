@@ -30,7 +30,10 @@ class ChangePassword {
      * @var string
      */
     public $newPassword2;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "currentPassword" => "string",
         "newPassword" => "string",
         "newPassword2" => "string",

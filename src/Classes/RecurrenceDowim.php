@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class RecurrenceDowim {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _first = "_first";
     const _second = "_second";

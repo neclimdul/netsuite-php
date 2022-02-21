@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CampaignResponse_marketingTypes {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _clickedThrough = "_clickedThrough";
     const _failedDeliveryFailure = "_failedDeliveryFailure";

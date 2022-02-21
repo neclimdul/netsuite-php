@@ -34,7 +34,10 @@ class GetSelectValueResult {
      * @var \NetSuite\Classes\BaseRefList
      */
     public $baseRefList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "totalRecords" => "integer",
         "totalPages" => "integer",

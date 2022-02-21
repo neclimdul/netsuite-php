@@ -18,6 +18,9 @@
 namespace NetSuite\Classes;
 
 class AsyncFault extends NSSoapFault {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
 }

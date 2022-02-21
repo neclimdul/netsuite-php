@@ -26,7 +26,10 @@ class SearchEnumMultiSelectField {
      * @var \NetSuite\Classes\SearchEnumMultiSelectFieldOperator::*
      */
     public $operator;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchValue" => "string[]",
         "operator" => "SearchEnumMultiSelectFieldOperator",
     );

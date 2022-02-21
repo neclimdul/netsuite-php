@@ -46,7 +46,10 @@ class ItemReceiptExpense {
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "markReceived" => "boolean",
         "orderLine" => "integer",
         "line" => "integer",

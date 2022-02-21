@@ -46,7 +46,10 @@ class UnitsTypeUom {
      * @var boolean
      */
     public $baseUnit;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "internalId" => "string",
         "unitName" => "string",
         "pluralName" => "string",

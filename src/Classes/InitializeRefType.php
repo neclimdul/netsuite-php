@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class InitializeRefType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const assemblyItem = "assemblyItem";
     const assemblyBuild = "assemblyBuild";

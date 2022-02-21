@@ -26,7 +26,10 @@ class AdvInterCompanyJournalEntryAccountingBookDetailList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "interCompanyJournalEntryAccountingBookDetail" => "AdvInterCompanyJournalEntryAccountingBookDetail[]",
         "replaceAll" => "boolean",
     );

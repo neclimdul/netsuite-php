@@ -78,7 +78,10 @@ class PurchaseRequisitionExpense {
      * @var boolean
      */
     public $isBillable;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "line" => "integer",
         "category" => "RecordRef",
         "location" => "RecordRef",

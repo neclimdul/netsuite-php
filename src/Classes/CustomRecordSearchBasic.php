@@ -78,7 +78,10 @@ class CustomRecordSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "recType" => "RecordRef",
         "availableOffline" => "SearchBooleanField",
         "created" => "SearchDateField",

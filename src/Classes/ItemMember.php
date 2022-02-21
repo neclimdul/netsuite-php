@@ -94,7 +94,10 @@ class ItemMember {
      * @var string
      */
     public $memberKey;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "memberDescr" => "string",
         "componentYield" => "float",
         "bomQuantity" => "float",

@@ -22,7 +22,10 @@ class GetSavedSearchRecord {
      * @var \NetSuite\Classes\SearchRecordType
      */
     public $searchType;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchType" => "SearchRecordType",
     );
 }

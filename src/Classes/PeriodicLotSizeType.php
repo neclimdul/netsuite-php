@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class PeriodicLotSizeType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _interval = "_interval";
     const _monthly = "_monthly";

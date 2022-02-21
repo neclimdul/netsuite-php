@@ -34,7 +34,10 @@ class CustomFieldTranslations {
      * @var string
      */
     public $help;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "locale" => "Language",
         "localeDescription" => "string",
         "label" => "string",

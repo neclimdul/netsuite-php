@@ -30,7 +30,10 @@ class PaymentInstrumentSearchRow extends SearchRow {
      * @var \NetSuite\Classes\TransactionSearchRowBasic
      */
     public $transactionJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "PaymentInstrumentSearchRowBasic",
         "customerJoin" => "CustomerSearchRowBasic",
         "transactionJoin" => "TransactionSearchRowBasic",

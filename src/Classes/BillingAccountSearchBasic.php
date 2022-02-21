@@ -118,7 +118,10 @@ class BillingAccountSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "billingSchedule" => "SearchMultiSelectField",
         "cashSaleForm" => "SearchMultiSelectField",
         "class" => "SearchMultiSelectField",

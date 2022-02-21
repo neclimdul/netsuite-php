@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class DemandPlanMonth {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _april = "_april";
     const _august = "_august";

@@ -34,7 +34,10 @@ class CampaignResponseResponses {
      * @var string
      */
     public $note;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "response" => "string",
         "responseDate" => "string",
         "author" => "string",

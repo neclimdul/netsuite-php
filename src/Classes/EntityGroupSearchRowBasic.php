@@ -90,7 +90,10 @@ class EntityGroupSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "email" => "SearchColumnStringField[]",
         "externalId" => "SearchColumnSelectField[]",
         "groupName" => "SearchColumnStringField[]",

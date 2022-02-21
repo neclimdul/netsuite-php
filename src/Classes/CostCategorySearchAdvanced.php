@@ -34,7 +34,10 @@ class CostCategorySearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "CostCategorySearch",
         "columns" => "CostCategorySearchRow",
         "savedSearchId" => "string",

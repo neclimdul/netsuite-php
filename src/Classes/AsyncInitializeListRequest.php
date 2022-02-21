@@ -22,7 +22,10 @@ class AsyncInitializeListRequest {
      * @var \NetSuite\Classes\InitializeRecord[]
      */
     public $initializeRecord;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "initializeRecord" => "InitializeRecord[]",
     );
 }

@@ -58,7 +58,10 @@ class UnitsTypeSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $unitName;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "abbreviation" => "SearchColumnStringField[]",
         "baseUnit" => "SearchColumnBooleanField[]",
         "conversionRate" => "SearchColumnStringField[]",

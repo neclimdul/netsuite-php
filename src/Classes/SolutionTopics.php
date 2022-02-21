@@ -22,7 +22,10 @@ class SolutionTopics {
      * @var \NetSuite\Classes\RecordRef
      */
     public $topic;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "topic" => "RecordRef",
     );
 }

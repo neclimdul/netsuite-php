@@ -58,7 +58,10 @@ class ResourceAllocationSearch extends SearchRecord {
      * @var \NetSuite\Classes\CustomSearchJoin[]
      */
     public $customSearchJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "ResourceAllocationSearchBasic",
         "customerJoin" => "CustomerSearchBasic",
         "employeeJoin" => "EmployeeSearchBasic",

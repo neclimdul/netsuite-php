@@ -26,7 +26,10 @@ class ItemAccountingBookDetailList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "itemAccountingBookDetail" => "ItemAccountingBookDetail[]",
         "replaceAll" => "boolean",
     );

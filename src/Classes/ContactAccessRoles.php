@@ -46,7 +46,10 @@ class ContactAccessRoles {
      * @var boolean
      */
     public $sendEmail;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "giveAccess" => "boolean",
         "contact" => "RecordRef",
         "email" => "string",

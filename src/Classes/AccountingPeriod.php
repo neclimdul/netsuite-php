@@ -86,7 +86,10 @@ class AccountingPeriod extends Record {
      * @var string
      */
     public $internalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "periodName" => "string",
         "parent" => "RecordRef",
         "startDate" => "dateTime",

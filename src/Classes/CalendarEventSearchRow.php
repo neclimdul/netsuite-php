@@ -70,7 +70,10 @@ class CalendarEventSearchRow extends SearchRow {
      * @var \NetSuite\Classes\CustomSearchRowBasic[]
      */
     public $customSearchJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "CalendarEventSearchRowBasic",
         "attendeeJoin" => "EntitySearchRowBasic",
         "attendeeContactJoin" => "ContactSearchRowBasic",

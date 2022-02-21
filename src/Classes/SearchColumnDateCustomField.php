@@ -22,7 +22,10 @@ class SearchColumnDateCustomField extends SearchColumnCustomField {
      * @var string
      */
     public $searchValue;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchValue" => "dateTime",
     );
 }

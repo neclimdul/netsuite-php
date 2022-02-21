@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemInvtClassification {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _a = "_a";
     const _b = "_b";

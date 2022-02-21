@@ -78,7 +78,10 @@ class InventoryNumberSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "expirationDate" => "SearchDateField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",

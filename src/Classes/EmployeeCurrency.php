@@ -22,7 +22,10 @@ class EmployeeCurrency {
      * @var \NetSuite\Classes\RecordRef
      */
     public $currency;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "currency" => "RecordRef",
     );
 }

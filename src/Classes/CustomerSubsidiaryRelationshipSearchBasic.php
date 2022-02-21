@@ -66,7 +66,10 @@ class CustomerSubsidiaryRelationshipSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "balance" => "SearchDoubleField",
         "depositBalance" => "SearchDoubleField",
         "entity" => "SearchMultiSelectField",

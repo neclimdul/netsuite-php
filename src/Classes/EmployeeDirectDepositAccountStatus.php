@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class EmployeeDirectDepositAccountStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _active = "_active";
     const _pending = "_pending";

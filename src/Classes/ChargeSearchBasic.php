@@ -126,7 +126,10 @@ class ChargeSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "amount" => "SearchDoubleField",
         "billingAccount" => "SearchMultiSelectField",
         "billingItem" => "SearchMultiSelectField",

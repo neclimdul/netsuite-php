@@ -54,7 +54,10 @@ class JobCreditCards {
      * @var string
      */
     public $validFrom;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "internalId" => "string",
         "ccNumber" => "string",
         "ccExpireDate" => "dateTime",

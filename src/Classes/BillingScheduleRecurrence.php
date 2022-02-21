@@ -46,7 +46,10 @@ class BillingScheduleRecurrence {
      * @var \NetSuite\Classes\RecordRef
      */
     public $paymentTerms;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "recurrenceId" => "integer",
         "count" => "integer",
         "units" => "BillingScheduleRecurrenceRecurrenceUnits",

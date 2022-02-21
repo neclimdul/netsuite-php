@@ -34,7 +34,10 @@ class TaskSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "TaskSearch",
         "columns" => "TaskSearchRow",
         "savedSearchId" => "string",

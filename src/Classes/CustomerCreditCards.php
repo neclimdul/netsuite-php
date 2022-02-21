@@ -62,7 +62,10 @@ class CustomerCreditCards {
      * @var boolean
      */
     public $ccDefault;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "internalId" => "string",
         "ccNumber" => "string",
         "ccExpireDate" => "dateTime",

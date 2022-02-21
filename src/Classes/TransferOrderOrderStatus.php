@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class TransferOrderOrderStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _pendingApproval = "_pendingApproval";
     const _pendingFulfillment = "_pendingFulfillment";

@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CalendarEventAttendeeResponse {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _accepted = "_accepted";
     const _declined = "_declined";

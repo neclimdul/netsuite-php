@@ -138,7 +138,10 @@ class RevRecScheduleSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnBooleanField[]
      */
     public $useForeignAmounts;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accountingBook" => "SearchColumnSelectField[]",
         "amorStatus" => "SearchColumnEnumSelectField[]",
         "amorTemplate" => "SearchColumnStringField[]",

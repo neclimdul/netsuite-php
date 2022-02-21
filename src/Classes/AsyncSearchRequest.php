@@ -22,7 +22,10 @@ class AsyncSearchRequest {
      * @var \NetSuite\Classes\SearchRecord
      */
     public $searchRecord;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchRecord" => "SearchRecord",
     );
 }

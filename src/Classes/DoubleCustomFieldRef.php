@@ -22,7 +22,10 @@ class DoubleCustomFieldRef extends CustomFieldRef {
      * @var float
      */
     public $value;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "value" => "float",
     );
 }

@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class TaskPriority {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _high = "_high";
     const _low = "_low";

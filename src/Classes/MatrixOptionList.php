@@ -22,7 +22,10 @@ class MatrixOptionList {
      * @var \NetSuite\Classes\SelectCustomFieldRef[]
      */
     public $matrixOption;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "matrixOption" => "SelectCustomFieldRef[]",
     );
 }

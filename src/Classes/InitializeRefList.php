@@ -22,7 +22,10 @@ class InitializeRefList {
      * @var \NetSuite\Classes\InitializeRef[]
      */
     public $initializeRef;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "initializeRef" => "InitializeRef[]",
     );
 }

@@ -34,7 +34,10 @@ class EntityTaxRegistrationSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $taxRegistrationNumber;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "address" => "SearchColumnSelectField[]",
         "id" => "SearchColumnLongField[]",
         "nexusCountry" => "SearchColumnEnumSelectField[]",

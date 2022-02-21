@@ -22,7 +22,10 @@ class ItemsList {
      * @var \NetSuite\Classes\RecordRef[]
      */
     public $items;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "items" => "RecordRef[]",
     );
 }

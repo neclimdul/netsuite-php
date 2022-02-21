@@ -30,7 +30,10 @@ class RevRecScheduleRecurrence {
      * @var string
      */
     public $recamount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "incomeaccount" => "RecordRef",
         "periodOffset" => "integer",
         "recamount" => "string",

@@ -46,7 +46,10 @@ class ItemSupplyPlanOrder {
      * @var \NetSuite\Classes\ItemSupplyPlanOrderType
      */
     public $orderType;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "orderLineId" => "integer",
         "orderDate" => "dateTime",
         "receiptDate" => "dateTime",

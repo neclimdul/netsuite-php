@@ -34,7 +34,10 @@ class SalesTaxItemSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "SalesTaxItemSearch",
         "columns" => "SalesTaxItemSearchRow",
         "savedSearchId" => "string",

@@ -22,7 +22,10 @@ class AttachReference {
      * @var \NetSuite\Classes\BaseRef
      */
     public $attachTo;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "attachTo" => "BaseRef",
     );
 }

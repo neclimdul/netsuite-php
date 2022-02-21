@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class GetSelectValueFilterOperator {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const contains = "contains";
     const is = "is";

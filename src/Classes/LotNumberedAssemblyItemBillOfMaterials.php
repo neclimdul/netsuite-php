@@ -42,7 +42,10 @@ class LotNumberedAssemblyItemBillOfMaterials {
      * @var string
      */
     public $memo;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "billOfMaterials" => "RecordRef",
         "currentRevision" => "string",
         "masterDefault" => "boolean",

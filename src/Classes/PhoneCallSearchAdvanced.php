@@ -34,7 +34,10 @@ class PhoneCallSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "PhoneCallSearch",
         "columns" => "PhoneCallSearchRow",
         "savedSearchId" => "string",

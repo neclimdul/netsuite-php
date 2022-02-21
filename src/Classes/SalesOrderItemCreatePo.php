@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class SalesOrderItemCreatePo {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _dropShipment = "_dropShipment";
     const _specialOrder = "_specialOrder";

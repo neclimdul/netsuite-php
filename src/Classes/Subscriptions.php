@@ -30,7 +30,10 @@ class Subscriptions {
      * @var string
      */
     public $lastModifiedDate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "subscribed" => "boolean",
         "subscription" => "RecordRef",
         "lastModifiedDate" => "dateTime",

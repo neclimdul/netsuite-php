@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemFulfillmentThirdPartyTypeUps {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _consigneeBilling = "_consigneeBilling";
     const _noneSelected = "_noneSelected";

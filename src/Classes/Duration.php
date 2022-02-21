@@ -26,7 +26,10 @@ class Duration {
      * @var \NetSuite\Classes\DurationUnit
      */
     public $unit;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "timeSpan" => "float",
         "unit" => "DurationUnit",
     );

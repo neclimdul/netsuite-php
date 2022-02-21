@@ -94,7 +94,10 @@ class PhoneCallSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "assigned" => "SearchMultiSelectField",
         "company" => "SearchMultiSelectField",
         "completedDate" => "SearchDateField",

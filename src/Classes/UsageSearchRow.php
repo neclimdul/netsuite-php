@@ -38,7 +38,10 @@ class UsageSearchRow extends SearchRow {
      * @var \NetSuite\Classes\ItemSearchRowBasic
      */
     public $subscriptionPlanJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "UsageSearchRowBasic",
         "chargeJoin" => "ChargeSearchRowBasic",
         "customerJoin" => "CustomerSearchRowBasic",

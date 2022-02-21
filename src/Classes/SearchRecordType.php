@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class SearchRecordType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const account = "account";
     const accountingPeriod = "accountingPeriod";

@@ -62,7 +62,10 @@ class TaxDetails {
      * @var string
      */
     public $calcDetail;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "taxDetailsReference" => "string",
         "lineType" => "string",
         "lineName" => "string",

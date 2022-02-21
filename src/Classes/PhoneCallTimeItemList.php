@@ -26,7 +26,10 @@ class PhoneCallTimeItemList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "timeItem" => "TimeItem[]",
         "replaceAll" => "boolean",
     );

@@ -62,7 +62,10 @@ class ManufacturingRoutingRoutingComponent {
      * @var string
      */
     public $item;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "itemName" => "string",
         "revision" => "string",
         "description" => "string",

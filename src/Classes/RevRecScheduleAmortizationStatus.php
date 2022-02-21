@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class RevRecScheduleAmortizationStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _notStarted = "_notStarted";
     const _inProgress = "_inProgress";

@@ -22,7 +22,10 @@ class GetDataCenterUrlsResponse {
      * @var \NetSuite\Classes\GetDataCenterUrlsResult
      */
     public $getDataCenterUrlsResult;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "getDataCenterUrlsResult" => "GetDataCenterUrlsResult",
     );
 }

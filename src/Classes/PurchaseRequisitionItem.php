@@ -126,7 +126,10 @@ class PurchaseRequisitionItem {
      * @var boolean
      */
     public $expandItemGroup;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "line" => "integer",
         "item" => "RecordRef",
         "vendorName" => "string",

@@ -74,7 +74,10 @@ class ConsolidatedExchangeRate extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "postingPeriod" => "string",
         "fromSubsidiary" => "string",
         "fromCurrency" => "string",

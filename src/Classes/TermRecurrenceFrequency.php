@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class TermRecurrenceFrequency {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _annually = "_annually";
     const _daily = "_daily";

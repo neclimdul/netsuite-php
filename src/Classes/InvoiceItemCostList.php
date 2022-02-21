@@ -26,7 +26,10 @@ class InvoiceItemCostList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "itemCost" => "InvoiceItemCost[]",
         "replaceAll" => "boolean",
     );

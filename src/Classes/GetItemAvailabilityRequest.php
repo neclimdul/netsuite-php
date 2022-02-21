@@ -22,7 +22,10 @@ class GetItemAvailabilityRequest {
      * @var \NetSuite\Classes\ItemAvailabilityFilter
      */
     public $itemAvailabilityFilter;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "itemAvailabilityFilter" => "ItemAvailabilityFilter",
     );
 }

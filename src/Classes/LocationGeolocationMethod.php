@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class LocationGeolocationMethod {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _deriveFromPostalCode = "_deriveFromPostalCode";
     const _useLatLongCoordinates = "_useLatLongCoordinates";

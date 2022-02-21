@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CashFlowRateType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _average = "_average";
     const _current = "_current";

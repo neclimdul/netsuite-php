@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class AccountingTransactionRevCommitStatus {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _committed = "_committed";
     const _partiallyCommitted = "_partiallyCommitted";

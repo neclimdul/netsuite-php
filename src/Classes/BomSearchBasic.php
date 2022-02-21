@@ -86,7 +86,10 @@ class BomSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchBooleanField
      */
     public $usedOnAssembly;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "availableForAllAssemblies" => "SearchBooleanField",
         "availableForAllLocations" => "SearchBooleanField",
         "createdDate" => "SearchDateField",

@@ -26,7 +26,10 @@ class PeriodDemandPlan {
      * @var \NetSuite\Classes\DayOfTheWeek
      */
     public $dayOfTheWeek;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "quantity" => "float",
         "dayOfTheWeek" => "DayOfTheWeek",
     );

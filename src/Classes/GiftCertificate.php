@@ -62,7 +62,10 @@ class GiftCertificate extends Record {
      * @var string
      */
     public $internalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "giftCertCode" => "string",
         "sender" => "string",
         "name" => "string",

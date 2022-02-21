@@ -26,7 +26,10 @@ class SiteCategoryPresentationItemList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "presentationItem" => "PresentationItem[]",
         "replaceAll" => "boolean",
     );

@@ -342,7 +342,10 @@ class VendorSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accountNumber" => "SearchStringField",
         "address" => "SearchStringField",
         "addressee" => "SearchStringField",

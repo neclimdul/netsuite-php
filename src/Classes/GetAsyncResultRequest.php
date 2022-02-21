@@ -26,7 +26,10 @@ class GetAsyncResultRequest {
      * @var integer
      */
     public $pageIndex;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "jobId" => "string",
         "pageIndex" => "integer",
     );

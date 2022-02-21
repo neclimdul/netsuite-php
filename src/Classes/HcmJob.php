@@ -50,7 +50,10 @@ class HcmJob extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "title" => "string",
         "isInactive" => "boolean",
         "employmentCategory" => "RecordRef",

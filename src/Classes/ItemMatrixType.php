@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class ItemMatrixType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _parent = "_parent";
     const _child = "_child";

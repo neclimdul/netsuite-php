@@ -26,7 +26,10 @@ class GetCurrencyRateResult {
      * @var \NetSuite\Classes\CurrencyRateList
      */
     public $currencyRateList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "currencyRateList" => "CurrencyRateList",
     );

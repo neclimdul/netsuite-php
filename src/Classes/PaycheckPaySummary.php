@@ -34,7 +34,10 @@ class PaycheckPaySummary {
      * @var float
      */
     public $ytdAmount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "payItem" => "string",
         "payItemType" => "string",
         "amount" => "float",

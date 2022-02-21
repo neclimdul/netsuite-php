@@ -206,7 +206,10 @@ class MseSubsidiarySearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accountingBook" => "SearchColumnSelectField[]",
         "accountingBookCurrency" => "SearchColumnSelectField[]",
         "address1" => "SearchColumnStringField[]",

@@ -26,7 +26,10 @@ class SubsidiaryNexus {
      * @var string
      */
     public $country;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "nexusId" => "RecordRef",
         "country" => "string",
     );

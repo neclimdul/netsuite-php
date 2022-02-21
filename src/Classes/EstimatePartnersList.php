@@ -26,7 +26,10 @@ class EstimatePartnersList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "partners" => "Partners[]",
         "replaceAll" => "boolean",
     );

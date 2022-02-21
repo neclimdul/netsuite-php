@@ -30,7 +30,10 @@ class AccountingPeriodSearchRow extends SearchRow {
      * @var \NetSuite\Classes\NoteSearchRowBasic
      */
     public $userNotesJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "AccountingPeriodSearchRowBasic",
         "userJoin" => "EmployeeSearchRowBasic",
         "userNotesJoin" => "NoteSearchRowBasic",

@@ -26,7 +26,10 @@ class Rate {
      * @var \NetSuite\Classes\RecordRef
      */
     public $priceLevel;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "value" => "float",
         "priceLevel" => "RecordRef",
     );

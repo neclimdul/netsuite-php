@@ -42,7 +42,10 @@ class EmployeeDeduction {
      * @var string
      */
     public $expirationDate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "payrollItem" => "RecordRef",
         "rate" => "string",
         "limit" => "float",

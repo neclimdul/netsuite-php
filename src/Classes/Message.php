@@ -102,7 +102,10 @@ class Message extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "author" => "RecordRef",
         "authorEmail" => "string",
         "recipient" => "RecordRef",

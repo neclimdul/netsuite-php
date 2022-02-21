@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class InitializeType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const assemblyBuild = "assemblyBuild";
     const assemblyUnbuild = "assemblyUnbuild";

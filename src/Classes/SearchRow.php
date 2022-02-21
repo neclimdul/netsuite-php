@@ -18,6 +18,9 @@
 namespace NetSuite\Classes;
 
 class SearchRow {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
 }

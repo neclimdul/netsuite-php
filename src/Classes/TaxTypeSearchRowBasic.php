@@ -70,7 +70,10 @@ class TaxTypeSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnBooleanField[]
      */
     public $taxInNetAmount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "country" => "SearchColumnEnumSelectField[]",
         "description" => "SearchColumnStringField[]",
         "doesNotAddToTotal" => "SearchColumnBooleanField[]",

@@ -22,7 +22,10 @@ class GetPostingTransactionSummaryResponse {
      * @var \NetSuite\Classes\GetPostingTransactionSummaryResult
      */
     public $getPostingTransactionSummaryResult;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "getPostingTransactionSummaryResult" => "GetPostingTransactionSummaryResult",
     );
 }

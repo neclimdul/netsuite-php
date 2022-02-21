@@ -22,7 +22,10 @@ class SearchColumnStringField extends SearchColumnField {
      * @var string
      */
     public $searchValue;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "searchValue" => "string",
     );
 }

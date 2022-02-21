@@ -26,7 +26,10 @@ class PromotionCodePartners {
      * @var string
      */
     public $code;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "partner" => "RecordRef",
         "code" => "string",
     );

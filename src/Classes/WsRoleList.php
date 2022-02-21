@@ -22,7 +22,10 @@ class WsRoleList {
      * @var \NetSuite\Classes\WsRole[]
      */
     public $wsRole;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "wsRole" => "WsRole[]",
     );
 }

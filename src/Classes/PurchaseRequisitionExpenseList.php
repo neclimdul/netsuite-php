@@ -26,7 +26,10 @@ class PurchaseRequisitionExpenseList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "purchaseRequisitionExpense" => "PurchaseRequisitionExpense[]",
         "replaceAll" => "boolean",
     );

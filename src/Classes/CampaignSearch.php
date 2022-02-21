@@ -58,7 +58,10 @@ class CampaignSearch extends SearchRecord {
      * @var \NetSuite\Classes\CustomSearchJoin[]
      */
     public $customSearchJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "CampaignSearchBasic",
         "campaignRecipientJoin" => "EntitySearchBasic",
         "fileJoin" => "FileSearchBasic",

@@ -22,7 +22,10 @@ class CustomFieldList {
      * @var \NetSuite\Classes\CustomFieldRef[]
      */
     public $customField;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "customField" => "CustomFieldRef[]",
     );
 }

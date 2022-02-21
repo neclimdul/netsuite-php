@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class RevRecScheduleRecogIntervalSrc {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _revRecDatesSpecifiedOnTransaction = "_revRecDatesSpecifiedOnTransaction";
     const _billingScheduleTranDateOnSalesOrder = "_billingScheduleTranDateOnSalesOrder";

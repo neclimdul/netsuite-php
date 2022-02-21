@@ -258,7 +258,10 @@ class IssueSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "ageInMonths" => "SearchLongField",
         "assigned" => "SearchMultiSelectField",
         "buildBroken" => "SearchMultiSelectField",

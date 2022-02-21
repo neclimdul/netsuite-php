@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class AlcoholRecipientType {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _consumer = "_consumer";
     const _licensee = "_licensee";

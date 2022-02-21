@@ -22,7 +22,10 @@ class UpdateInviteeStatusRequest {
      * @var \NetSuite\Classes\UpdateInviteeStatusReference
      */
     public $updateInviteeStatusReference;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "updateInviteeStatusReference" => "UpdateInviteeStatusReference",
     );
 }

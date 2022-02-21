@@ -26,7 +26,10 @@ class CustomerGroupPricing {
      * @var \NetSuite\Classes\RecordRef
      */
     public $level;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "group" => "RecordRef",
         "level" => "RecordRef",
     );

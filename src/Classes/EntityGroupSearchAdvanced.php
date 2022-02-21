@@ -34,7 +34,10 @@ class EntityGroupSearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "EntityGroupSearch",
         "columns" => "EntityGroupSearchRow",
         "savedSearchId" => "string",

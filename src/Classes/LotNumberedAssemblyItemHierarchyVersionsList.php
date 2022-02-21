@@ -26,7 +26,10 @@ class LotNumberedAssemblyItemHierarchyVersionsList {
      * @var boolean
      */
     public $replaceAll;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "lotNumberedAssemblyItemHierarchyVersions" => "LotNumberedAssemblyItemHierarchyVersions[]",
         "replaceAll" => "boolean",
     );

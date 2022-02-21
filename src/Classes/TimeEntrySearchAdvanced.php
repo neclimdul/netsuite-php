@@ -34,7 +34,10 @@ class TimeEntrySearchAdvanced extends SearchRecord {
      * @var string
      */
     public $savedSearchScriptId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "criteria" => "TimeEntrySearch",
         "columns" => "TimeEntrySearchRow",
         "savedSearchId" => "string",

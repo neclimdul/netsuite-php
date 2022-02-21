@@ -22,7 +22,10 @@ class BudgetExchangeRateList {
      * @var \NetSuite\Classes\BudgetExchangeRate[]
      */
     public $budgetExchangeRate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "budgetExchangeRate" => "BudgetExchangeRate[]",
     );
 }

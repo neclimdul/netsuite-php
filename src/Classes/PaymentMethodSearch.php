@@ -26,7 +26,10 @@ class PaymentMethodSearch extends SearchRecord {
      * @var \NetSuite\Classes\EmployeeSearchBasic
      */
     public $userJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "PaymentMethodSearchBasic",
         "userJoin" => "EmployeeSearchBasic",
     );

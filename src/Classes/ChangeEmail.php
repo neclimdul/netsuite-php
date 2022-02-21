@@ -34,7 +34,10 @@ class ChangeEmail {
      * @var boolean
      */
     public $justThisAccount;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "currentPassword" => "string",
         "newEmail" => "string",
         "newEmail2" => "string",

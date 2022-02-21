@@ -62,7 +62,10 @@ class UsageSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnSelectField[]
      */
     public $subscriptionPlan;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "customer" => "SearchColumnSelectField[]",
         "date" => "SearchColumnDateField[]",
         "externalId" => "SearchColumnSelectField[]",

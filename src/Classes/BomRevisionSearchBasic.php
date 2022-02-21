@@ -62,7 +62,10 @@ class BomRevisionSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchStringField
      */
     public $name;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "billOfMaterials" => "SearchMultiSelectField",
         "createdDate" => "SearchDateField",
         "effectiveEndDate" => "SearchDateField",

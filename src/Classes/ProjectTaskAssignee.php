@@ -54,7 +54,10 @@ class ProjectTaskAssignee {
      * @var float
      */
     public $plannedWork;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "resource" => "RecordRef",
         "units" => "float",
         "serviceItem" => "RecordRef",

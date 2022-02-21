@@ -30,7 +30,10 @@ class LotNumberedInventoryItemNumbers {
      * @var string
      */
     public $expirationDate;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "serialNumber" => "RecordRef",
         "quantityOnHand" => "float",
         "expirationDate" => "dateTime",

@@ -106,7 +106,10 @@ class PaycheckJournal extends Record {
      * @var string
      */
     public $externalId;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "subsidiary" => "RecordRef",
         "currency" => "RecordRef",
         "exchangeRate" => "float",

@@ -334,7 +334,10 @@ class ContactSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "address" => "SearchColumnStringField[]",
         "address1" => "SearchColumnStringField[]",
         "address2" => "SearchColumnStringField[]",

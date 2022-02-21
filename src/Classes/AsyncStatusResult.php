@@ -34,7 +34,10 @@ class AsyncStatusResult {
      * @var float
      */
     public $estRemainingDuration;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "jobId" => "string",
         "status" => "AsyncStatusType",
         "percentCompleted" => "float",

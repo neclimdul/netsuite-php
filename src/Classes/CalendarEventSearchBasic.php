@@ -106,7 +106,10 @@ class CalendarEventSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchCustomFieldList
      */
     public $customFieldList;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "accessLevel" => "SearchEnumMultiSelectField",
         "attendee" => "SearchMultiSelectField",
         "calendar" => "SearchMultiSelectField",

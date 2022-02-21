@@ -18,7 +18,10 @@
 namespace NetSuite\Classes;
 
 class CustomRecordTypePermissionsRestriction {
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
     );
     const _editingOnly = "_editingOnly";
     const _viewingAndEditing = "_viewingAndEditing";

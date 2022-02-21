@@ -26,7 +26,10 @@ class WriteResponse {
      * @var \NetSuite\Classes\BaseRef
      */
     public $baseRef;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "status" => "Status",
         "baseRef" => "BaseRef",
     );

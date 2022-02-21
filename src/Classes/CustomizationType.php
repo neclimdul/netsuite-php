@@ -22,7 +22,10 @@ class CustomizationType {
      * @var \NetSuite\Classes\GetCustomizationType
      */
     public $getCustomizationType;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "getCustomizationType" => "GetCustomizationType",
     );
 }

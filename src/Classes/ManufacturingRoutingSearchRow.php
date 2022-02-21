@@ -46,7 +46,10 @@ class ManufacturingRoutingSearchRow extends SearchRow {
      * @var \NetSuite\Classes\CustomSearchRowBasic[]
      */
     public $customSearchJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "ManufacturingRoutingSearchRowBasic",
         "itemJoin" => "ItemSearchRowBasic",
         "locationJoin" => "LocationSearchRowBasic",

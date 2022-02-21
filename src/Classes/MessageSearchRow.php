@@ -82,7 +82,10 @@ class MessageSearchRow extends SearchRow {
      * @var \NetSuite\Classes\VendorSearchRowBasic
      */
     public $vendorJoin;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "basic" => "MessageSearchRowBasic",
         "attachmentsJoin" => "FileSearchRowBasic",
         "authorJoin" => "EntitySearchRowBasic",

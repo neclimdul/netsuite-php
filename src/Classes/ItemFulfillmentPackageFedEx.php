@@ -118,7 +118,10 @@ class ItemFulfillmentPackageFedEx {
      * @var string
      */
     public $authorizationNumberFedEx;
-    static $paramtypesmap = array(
+    /**
+     * @var string[]
+     */
+    public static $paramtypesmap = array(
         "packageWeightFedEx" => "float",
         "dryIceWeightFedEx" => "float",
         "packageTrackingNumberFedEx" => "string",
