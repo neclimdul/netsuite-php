@@ -21,7 +21,10 @@ use NetSuite\Classes\TokenPassportSignature;
 use SoapClient;
 use SoapHeader;
 
-class NetSuiteClient
+/**
+ * Custom client base class.
+ */
+abstract class NetSuiteClient
 {
     /**
      * @var array
@@ -66,6 +69,15 @@ class NetSuiteClient
         );
 
     }
+
+    /**
+     * Service Call: getDataCenterUrls
+     * Parameter options:
+     * (GetDataCenterUrlsRequest) parameters
+     * @return Classes\GetDataCenterUrlsResponse
+     * @throws \Exception invalid function signature message
+     */
+    abstract public function getDataCenterUrls(Classes\GetDataCenterUrlsRequest $arg);
 
     /**
      * Set the data center URL for the configured NetSuite account
