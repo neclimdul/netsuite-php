@@ -6,11 +6,6 @@ parameters:
 			path: src/NetSuiteClient.php
 
 		-
-			message: "#^Instantiated class NetSuite\\\\Classes\\\\Passport not found\\.$#"
-			count: 1
-			path: src/NetSuiteClient.php
-
-		-
 			message: "#^Unsafe usage of new static\\(\\)\\.$#"
 			count: 1
 			path: src/NetSuiteClient.php

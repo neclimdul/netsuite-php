@@ -14,9 +14,7 @@ namespace NetSuite;
 
 use NetSuite\Classes\ApplicationInfo;
 use NetSuite\Classes\GetDataCenterUrlsRequest;
-use NetSuite\Classes\Passport;
 use NetSuite\Classes\Preferences;
-use NetSuite\Classes\RecordRef;
 use NetSuite\Classes\SearchPreferences;
 use NetSuite\Classes\TokenPassport;
 use NetSuite\Classes\TokenPassportSignature;
@@ -184,9 +182,6 @@ class NetSuiteClient
 
         if (isset($this->config['token'])) {
             $this->addHeader('tokenPassport', $this->createTokenPassportFromConfig($this->config));
-        } else {
-            $this->setApplicationInfo($this->config['app_id']);
-            $this->addHeader("passport", $this->createPassportFromConfig($this->config));
         }
 
         try {
@@ -229,24 +224,6 @@ class NetSuiteClient
     private function createWsdl($config)
     {
         return $config['host'].'/wsdl/v'.$config['endpoint'].'_0/netsuite.wsdl';
-    }
-
-    /**
-     * Create the Passport.
-     *
-     * @param array $config
-     * @return Passport
-     */
-    private function createPassportFromConfig($config)
-    {
-        $passport = new Passport();
-        $passport->account = $config['account'];
-        $passport->email = $config['email'];
-        $passport->password = $config['password'];
-        $passport->role = new RecordRef();
-        $passport->role->internalId = $config['role'];
-
-        return $passport;
     }
 
     /**
