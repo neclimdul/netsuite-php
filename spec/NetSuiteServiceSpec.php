@@ -2,8 +2,8 @@
 
 namespace spec\NetSuite;
 
+use NetSuite\NetSuiteService;
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 
 class NetSuiteServiceSpec extends ObjectBehavior
 {
@@ -16,6 +16,6 @@ class NetSuiteServiceSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('NetSuite\NetSuiteService');
+        $this->shouldHaveType(NetSuiteService::class);
     }
 }
