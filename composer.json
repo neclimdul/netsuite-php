@@ -41,6 +41,10 @@
   },
   "minimum-stability": "stable",
   "scripts": {
-    "generate": "php utilities/separate_classes.php"
+    "generate": "php utilities/separate_classes.php",
+    "static": [
+      "parallel-lint src spec",
+      "phpstan"
+    ]
   }
 }
