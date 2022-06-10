@@ -14,8 +14,7 @@
     "php": ">=7.1",
     "ext-soap": "*",
     "ext-SimpleXML": "*",
-    "ext-openssl": "*",
-    "paragonie/random_compat": ">=1"
+    "ext-openssl": "*"
   },
   "require-dev": {
     "phpspec/phpspec": ">=5"
