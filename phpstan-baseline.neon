@@ -5,8 +5,3 @@ parameters:
 			count: 1
 			path: src/NetSuiteClient.php
 
-		-
-			message: "#^Cannot access static property \\$paramtypesmap on class\\-string\\|false\\.$#"
-			count: 1
-			path: src/includes/functions.php
-

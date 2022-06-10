@@ -33,20 +33,25 @@ namespace Netsuite {
 
 namespace {
 
+  /**
+   * Helper that allows creating objects and setting their properties.
+   *
+   * Mimics functionality from PHP toolkit
+   *
+   * @param object $object
+   *   Netsuite toolkit object.
+   * @param array|NULL $fieldArray
+   *   Associative array of properties to set.
+   */
     function setFields($object, array $fieldArray=null)
     {
-        // helper method that allows creating objects and setting their properties based on an associative array passed as argument. Mimics functionality from PHP toolkit
+        assert(is_object($object));
         $classname = get_class($object);
         // a static map that maps class parameters to their types. needed for knowing which objects to create
-        $typesmap = $classname::$paramtypesmap;
-
-        if (!isset($typesmap)) {
-            // if the class does not have paramtypesmap, consider it empty
-            $typesmap = [];
-        }
+        $typesmap = $classname::$paramtypesmap ?? [];
 
         if ($fieldArray == null) {
-            // nothign to do
+            // nothing to do
             return;
         }
 
@@ -57,7 +62,7 @@ namespace {
             }
 
             if (!isset($typesmap[$fldName])) {
-                // the value is not a valid class atrribute
+                // the value is not a valid class attribute
                 trigger_error("SetFields error: parameter \"" . $fldName . "\" is not a valid parameter for an object of class \"" . $classname . "\", it will be omitted", E_USER_WARNING);
                 continue;
             }
